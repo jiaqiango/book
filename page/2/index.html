@@ -4,28 +4,15 @@
   <meta charset="utf-8">
   
   
-  <title>编写第一个作业 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="主界面介绍 左边控件区，右边转换区 配置数据库  执行SQL脚本表输入 拖动 表输入 到绘制区并编辑，SQL区可以自定义sql语句 表输出 拖动 表输出 到绘制区并编辑 连接控件 按住 Shift 建，用鼠标拖动表输入控件到表输出 编辑字段映射 首先点击 选中指定数据库字段 复选框（否则无法编辑映射），点击 输入字段映射 进入编辑  进入 编辑映射 可以看到 原表字段 和 目标表字段。手动选择字段">
-<meta property="og:type" content="article">
-<meta property="og:title" content="编写第一个作业">
-<meta property="og:url" content="http://book.asmyun.com/2020/12/14/kettle_one/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://book.asmyun.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="主界面介绍 左边控件区，右边转换区 配置数据库  执行SQL脚本表输入 拖动 表输入 到绘制区并编辑，SQL区可以自定义sql语句 表输出 拖动 表输出 到绘制区并编辑 连接控件 按住 Shift 建，用鼠标拖动表输入控件到表输出 编辑字段映射 首先点击 选中指定数据库字段 复选框（否则无法编辑映射），点击 输入字段映射 进入编辑  进入 编辑映射 可以看到 原表字段 和 目标表字段。手动选择字段">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1607995988.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608010695.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608010973.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608011693.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608011854.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608012142.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608012285.png">
-<meta property="og:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1608012627.png">
-<meta property="article:published_time" content="2020-12-14T12:15:00.363Z">
-<meta property="article:modified_time" content="2020-12-15T06:11:44.088Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://book.asmyun.com/2020/12/14/kettle_one/1607995988.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -82,7 +69,61 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-kettle_one" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main">
+  
+    <article id="post-kettle" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/15/kettle/" class="article-date">
+  <time class="dt-published" datetime="2020-12-15T06:13:49.000Z" itemprop="datePublished">2020-12-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/15/kettle/">kettle</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="/2020/12/14/kettle_install/" title="安装kettle">安装kettle</a></li>
+<li><a href="/2020/12/14/kettle_one/" title="编写第一个作业">编写第一个作业</a></li>
+<li><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></li>
+<li>kettle demo</li>
+</ul>
+<h3 id="ETL介绍"><a href="#ETL介绍" class="headerlink" title="ETL介绍"></a>ETL介绍</h3><h4 id="ETL是什么"><a href="#ETL是什么" class="headerlink" title="ETL是什么"></a>ETL是什么</h4><p>ETL分别是“Extract”、“ Transform” 、“Load”三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取</p>
+<h4 id="ETL工具"><a href="#ETL工具" class="headerlink" title="ETL工具"></a>ETL工具</h4><p>ETL的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作<br>目前，ETL工具的典型代表有:<br>商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS<br>开源软件：Kettle、Talend、CloverETL、Ketl，Octopus</p>
+<h3 id="Kettle介绍"><a href="#Kettle介绍" class="headerlink" title="Kettle介绍"></a>Kettle介绍</h3><p>Kettle是Pentaho的一个组件，主要用于数据库间的数据迁移。<br>Kettle自己有三个主要组件：Spoon，Kitchen，Pan</p>
+<h4 id="Spoon"><a href="#Spoon" class="headerlink" title="Spoon"></a>Spoon</h4><p>图形化界面工具(GUI方式)，Spoon允许你通过图形界面来设计Job和Transformation，可以保存为文件或者保存在数据库中。<br>也可以直接在Spoon图形化界面中运行Job和Transformation，</p>
+<h4 id="Pan"><a href="#Pan" class="headerlink" title="Pan"></a>Pan</h4><p>Transformation执行器(命令行方式)，Pan用于在终端执行Transformation，没有图形界面。</p>
+<h4 id="Kitchen"><a href="#Kitchen" class="headerlink" title="Kitchen"></a>Kitchen</h4><p>Job执行器(命令行方式)，Kitchen用于在终端执行Job，没有图形界面。</p>
+<h4 id="Carte"><a href="#Carte" class="headerlink" title="Carte"></a>Carte</h4><p>嵌入式Web服务，用于远程执行Job或Transformation，Kettle通过Carte建立集群。</p>
+<h4 id="Encr"><a href="#Encr" class="headerlink" title="Encr"></a>Encr</h4><p>Kettle用于字符串加密的命令行工具，如：对在Job或Transformation中定义的数据库连接参数进行加密。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://book.asmyun.com/2020/12/15/kettle/" data-id="ckipos53a000anwuq94fq7mn6" data-title="kettle" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-kettle_one" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/12/14/kettle_one/" class="article-date">
   <time class="dt-published" datetime="2020-12-14T12:15:00.363Z" itemprop="datePublished">2020-12-14</time>
@@ -95,8 +136,8 @@
       <header class="article-header">
         
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      编写第一个作业
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/14/kettle_one/">编写第一个作业</a>
     </h1>
   
 
@@ -131,29 +172,59 @@
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2020/12/15/kettle/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          kettle
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/12/14/kettle_install/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">kettle安装</div>
-    </a>
-  
-</nav>
+</article>
 
+
+
+  
+    <article id="post-kettle_install" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/14/kettle_install/" class="article-date">
+  <time class="dt-published" datetime="2020-12-14T11:41:01.333Z" itemprop="datePublished">2020-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/14/kettle_install/">kettle安装</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p><a target="_blank" rel="noopener" href="https://community.hitachivantara.com/s/">https://community.hitachivantara.com/s/</a></p>
+<p>在官方网站下载安装包</p>
+<img src="/2020/12/14/kettle_install/1607947652.png" class="">
+<p>解压即可使用</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://book.asmyun.com/2020/12/14/kettle_install/" data-id="ckipos53b000bnwuqbb4te598" data-title="kettle安装" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
   
 </article>
 
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 </section>
         
