@@ -1,11 +1,11 @@
 ---
 title: kettle
-date: 2020-12-15 14:13:49
+date: 2020-12-14 14:13:49
 tags:
 ---
 
-* {% post_link kettle_install 安装kettle %}
-* {% post_link kettle_one 编写第一个作业 %}
+* {% post_link kettle-install 安装kettle %}
+* {% post_link kettle-one 编写第一个作业 %}
 * {% post_link kettle-control 组件介绍 %}
 * kettle demo
 
