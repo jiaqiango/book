@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <title>
-        kettle安装 |
+        kettle |
         
         Keep
     </title>
@@ -56,6 +56,22 @@
             
                 <li class="menu-item">
                     <a class=""
+                       href="/categories"
+                    >
+                        分类
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
+                       href="/tags"
+                    >
+                        标签
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class=""
                        href="/archives"
                     >
                         归档
@@ -75,6 +91,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
@@ -101,7 +127,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">kettle安装</span>
+            <span class="title-hover-animation">kettle</span>
         </div>
 
         
@@ -117,7 +143,7 @@
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fas fa-calendar"></i> 2020-12-16 09:13:42
+        <i class="fas fa-calendar"></i> 2020-12-14 14:13:49
     </span>
     
     
@@ -134,10 +160,22 @@
         
 
         <div class="article-content markdown-body">
-            <h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p><a class="link"   target="_blank" rel="noopener" href="https://community.hitachivantara.com/s/" >https://community.hitachivantara.com/s/<i class="fas fa-external-link-alt"></i></a></p>
-<p>在官方网站下载安装包</p>
-<img src="/2020/12/16/kettle_install/1607947652.png" class="">
-<p>解压即可使用</p>
+            <ul>
+<li><a href="/2020/12/14/kettle-install/" title="安装kettle">安装kettle</a></li>
+<li><a href="/2020/12/14/kettle-one/" title="编写第一个作业">编写第一个作业</a></li>
+<li><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></li>
+<li><a href="/2020/12/16/kettle-demo/" title="kettle示例">kettle示例</a>
+
+</li>
+</ul>
+<h3 id="ETL介绍"><a href="#ETL介绍" class="headerlink" title="ETL介绍"></a>ETL介绍</h3><h4 id="ETL是什么"><a href="#ETL是什么" class="headerlink" title="ETL是什么"></a>ETL是什么</h4><p>ETL分别是“Extract”、“ Transform” 、“Load”三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取</p>
+<h4 id="ETL工具"><a href="#ETL工具" class="headerlink" title="ETL工具"></a>ETL工具</h4><p>ETL的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作<br>目前，ETL工具的典型代表有:<br>商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS<br>开源软件：Kettle、Talend、CloverETL、Ketl，Octopus</p>
+<h3 id="Kettle介绍"><a href="#Kettle介绍" class="headerlink" title="Kettle介绍"></a>Kettle介绍</h3><p>Kettle是Pentaho的一个组件，主要用于数据库间的数据迁移。<br>Kettle自己有三个主要组件：Spoon，Kitchen，Pan</p>
+<h4 id="Spoon"><a href="#Spoon" class="headerlink" title="Spoon"></a>Spoon</h4><p>图形化界面工具(GUI方式)，Spoon允许你通过图形界面来设计Job和Transformation，可以保存为文件或者保存在数据库中。<br>也可以直接在Spoon图形化界面中运行Job和Transformation，</p>
+<h4 id="Pan"><a href="#Pan" class="headerlink" title="Pan"></a>Pan</h4><p>Transformation执行器(命令行方式)，Pan用于在终端执行Transformation，没有图形界面。</p>
+<h4 id="Kitchen"><a href="#Kitchen" class="headerlink" title="Kitchen"></a>Kitchen</h4><p>Job执行器(命令行方式)，Kitchen用于在终端执行Job，没有图形界面。</p>
+<h4 id="Carte"><a href="#Carte" class="headerlink" title="Carte"></a>Carte</h4><p>嵌入式Web服务，用于远程执行Job或Transformation，Kettle通过Carte建立集群。</p>
+<h4 id="Encr"><a href="#Encr" class="headerlink" title="Encr"></a>Encr</h4><p>Kettle用于字符串加密的命令行工具，如：对在Job或Transformation中定义的数据库连接参数进行加密。</p>
 
         </div>
 
@@ -145,11 +183,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：kettle安装</li>
+        <li>本文标题：kettle</li>
         <li>本文作者：QiangJia</li>
-        <li>创建时间：2020-12-16 09:13:42</li>
+        <li>创建时间：2020-12-14 14:13:49</li>
         <li>
-            本文链接：https://book.asmyun.com/2020/12/16/kettle_install/
+            本文链接：https://book.asmyun.com/2020/12/14/kettle/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -166,33 +204,18 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2020/12/16/kettle_one/"
+                           href="/2020/12/14/kettle-install/"
                         >
                             <span class="left arrow-icon flex-center" >
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">编写第一个作业</span>
+                                <span class="post-nav-title-item">kettle安装</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
                     </div>
                 
-                
-                    <div class="article-next">
-                        <a class="next"
-                           rel="next"
-                           href="/2020/12/15/kettle-control-mapping/"
-                        >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">kettle_control_mapping</span>
-                                <span class="post-nav-item">下一篇</span>
-                            </span>
-                            <span class="right arrow-icon flex-center" >
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                        </a>
-                    </div>
                 
             </div>
         
@@ -290,7 +313,7 @@
         
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%98%E7%BD%91"><span class="nav-number">1.</span> <span class="nav-text">官网</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ETL%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">ETL介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ETL%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.1.</span> <span class="nav-text">ETL是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ETL%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.</span> <span class="nav-text">ETL工具</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kettle%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">Kettle介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Spoon"><span class="nav-number">2.1.</span> <span class="nav-text">Spoon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Pan"><span class="nav-number">2.2.</span> <span class="nav-text">Pan</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kitchen"><span class="nav-number">2.3.</span> <span class="nav-text">Kitchen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Carte"><span class="nav-number">2.4.</span> <span class="nav-text">Carte</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Encr"><span class="nav-number">2.5.</span> <span class="nav-text">Encr</span></a></li></ol></li></ol>
     </div>
 </div>
         
