@@ -160,7 +160,33 @@
         
 
         <div class="article-content markdown-body">
-            
+            <ul>
+<li><a href="#Switch/case">Switch/case</a></li>
+<li><a href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95">过滤记录</a></li>
+<li><a href="#%E7%A9%BA%E6%93%8D%E4%BD%9C">空操作</a></li>
+<li><a href="#%E4%B8%AD%E6%AD%A2">中止</a></li>
+<li><a href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81">检测空流</a></li>
+<li><a href="#Blocking+step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89">Blocking step（阻塞数据）</a></li>
+</ul>
+<h5 id="Switch-case"><a href="#Switch-case" class="headerlink" title="Switch/case"></a>Switch/case</h5><p>数据流从一路到多路,等同java中switch</p>
+<img src="/2020/12/15/kettle-control-flow/jxe3r6lbml.png" class="">
+
+<h5 id="过滤记录"><a href="#过滤记录" class="headerlink" title="过滤记录"></a>过滤记录</h5><p>从一路到两路,等同java中if</p>
+<img src="/2020/12/15/kettle-control-flow/2k4z2t7s5i.png" class="">
+
+<h5 id="空操作"><a href="#空操作" class="headerlink" title="空操作"></a>空操作</h5><p>数据流的终点</p>
+<img src="/2020/12/15/kettle-control-flow/qeacjl4b55.png" class="">
+
+<h5 id="中止"><a href="#中止" class="headerlink" title="中止"></a>中止</h5><p>数据流的终点，如果有数据到这里，将会报错。用来校验数据的时候使用</p>
+<img src="/2020/12/15/kettle-control-flow/eslpl1d7w3.png" class="">
+
+<h5 id="检测空流"><a href="#检测空流" class="headerlink" title="检测空流"></a>检测空流</h5><p>如果数据流为空（即数据流不包含任何行），则此步骤将输出一行。 输出行将具有与输入行相同的字段，但是所有字段值将为空（NULL）<br>如果数据流不为空，则不会输出任何内容</p>
+<img src="/2020/12/15/kettle-control-flow/1608283112.png" class="">
+
+<h5 id="Blocking-step（阻塞数据）"><a href="#Blocking-step（阻塞数据）" class="headerlink" title="Blocking step（阻塞数据）"></a>Blocking step（阻塞数据）</h5><p>有多条数据时，只会通过最后一条数据</p>
+<img src="/2020/12/15/kettle-control-flow/1608283356.png" class="">
+
+
         </div>
 
         
@@ -312,7 +338,7 @@
         
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Switch-case"><span class="nav-number">1.</span> <span class="nav-text">Switch&#x2F;case</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">过滤记录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A9%BA%E6%93%8D%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">空操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%AD%E6%AD%A2"><span class="nav-number">4.</span> <span class="nav-text">中止</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81"><span class="nav-number">5.</span> <span class="nav-text">检测空流</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Blocking-step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">Blocking step（阻塞数据）</span></a></li></ol>
     </div>
 </div>
         
