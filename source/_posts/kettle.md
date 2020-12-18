@@ -7,7 +7,7 @@ tags:
 * {% post_link kettle-install 安装kettle %}
 * {% post_link kettle-one 编写第一个作业 %}
 * {% post_link kettle-control 组件介绍 %}
-* kettle demo
+* {% post_link kettle-demo kettle示例 %}
 
 ### ETL介绍
 #### ETL是什么
