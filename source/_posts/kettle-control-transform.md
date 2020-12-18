@@ -3,3 +3,97 @@ title: kettle转换控件
 date: 2020-12-15 14:35:00
 tags:
 ---
+
+- [Concat fields](#Concat+fields)
+- [值映射](#值映射)
+- [剪切字符串](#剪切字符串)
+- [增加常量](#增加常量)
+- [增加序列](#增加序列)
+- [字段选择](#字段选择)
+- [字符串操作](#字符串操作)
+- [字符串替换](#字符串替换)
+- [去除重复记录](#去除重复记录)
+- [排序记录](#排序记录)
+- [唯一行(哈希值)](#唯一行(哈希值))
+- [拆分字段](#拆分字段)
+- [列拆分为多行](#列拆分为多行)
+- [列转行](#列转行)
+- [行转列](#行转列)
+- [行扁平化](#行扁平化)
+- [计算器](#计算器)
+
+##### Concat fields
+多个字段连接起来形成一个新的字段
+{% asset_img kettle-control-transform/hyodd6nsmq.png %}
+
+##### 值映射
+把字段的一个值映射成其他的值。在数据质量规范上使用非常多，比如很多系统对应性别gender字段的定义不同
+{% asset_img kettle-control-transform/8pefxoyzfr.png %}
+
+##### 剪切字符串
+指定输入流字段裁剪的位置剪切出新的字段
+{% asset_img kettle-control-transform/3osq26iwz6.png %}
+
+##### 增加常量
+在本身的数据流里面添加一列数据，该列的数据都是相同的值
+{% asset_img kettle-control-transform/feqxhm7ydg.png %}
+
+##### 增加序列
+给数据流添加一个序列字段
+{% asset_img kettle-control-transform/srkhzwew0q.png %}
+
+##### 字段选择
+从数据流中选择字段、改变名称、修改数据类型
+{% asset_img kettle-control-transform/fv2szftte9.png %}
+选择要移除的字段
+{% asset_img kettle-control-transform/tg1ztyab5b.png %}
+选择要改变的元数据信息
+{% asset_img kettle-control-transform/26t0f0or0a.png %}
+
+##### 字符串操作
+去除字符串两端的空格和大小写切换，转换字符串大小写，并生成新的字段
+{% asset_img kettle-control-transform/jf6zopwn1k.png %}
+
+##### 字符串替换
+指定搜索内容和替换内容，如果输入流的字段匹配上搜索内容就进行替换生成新字段
+{% asset_img kettle-control-transform/7omradq1p3.png %}
+
+##### 去除重复记录
+去除数据流里面相同的数据行。注意：必须先对数据流进行排序
+{% asset_img kettle-control-transform/q1z2ujrt2q.png %}
+
+##### 排序记录
+按照指定的字段的升序或降序对数据流排序
+{% asset_img kettle-control-transform/8g9hg562ok.png %}
+
+##### 唯一行(哈希值)
+删除数据流重复的行。注意：唯一行（哈希值）和（排序记录+去除重复记录）效果一样的，但是实现的原理不同。唯一行（哈希值）执行的效率会高一些！唯一行哈希值是根据哈希值进行比较的，而去除重复记录是比较相邻两行数据是否一致进行比较的
+{% asset_img kettle-control-transform/jvnioe357n.png %}
+
+##### 拆分字段
+把字段按照分隔符拆分成两个或多个字段。注意：拆分字段后，原字段就不存在于数据流中
+{% asset_img kettle-control-transform/9rnpdx7en4.png %}
+
+##### 列拆分为多行
+把指定分隔符的字段进行拆分为多行
+{% asset_img kettle-control-transform/39pxctveig.png %}
+
+##### 列转行
+如果数据一列有相同的值，按照指定的字段，把多行数据转换为一行数据。去除一些原来的列名，把一列数据变为字段。
+　　注意：列转行之前数据流必须进行排序！必须使用排序记录！
+{% asset_img kettle-control-transform/2f2qowozg7.png %}
+
+##### 行转列
+把数据字段的字段名转换为一列，把数据行变为数据列
+{% asset_img kettle-control-transform/d1zym4myue.png %}
+
+##### 行扁平化
+把同一组的多行数据合并成为一行。注意：只有数据流的同类数据数据行记录一致的情况才可使用！数据流必须进行排序，否则结果会不正确
+{% asset_img kettle-control-transform/95bsokfiol.png %}
+
+##### 计算器
+使用函数集合来创建新的字段，还可以设置字段是否移除
+{% asset_img kettle-control-transform/vusrz87m86.png %}
+选择计算函数
+{% asset_img kettle-control-transform/1608259394.png %}
+
