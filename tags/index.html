@@ -25,12 +25,11 @@
 
   
 
-<link rel="canonical" href="http://book.asmyun.com/2020/12/15/kettle-control-flow/">
+<link rel="canonical" href="http://book.asmyun.com/tags/">
 
 
 
-  <title>
-kettle流程控件 |
+  <title>全部标签 |
 QiangJia = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,19 +57,8 @@ QiangJia = Hexo</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">kettle流程控件
+  <h1 itemprop="name headline">全部标签
   </h1>
-  
-<div class="meta">
-  <span class="item" title="创建时间：2020-12-15 14:36:20">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2020-12-15T14:36:20+08:00">2020-12-15</time>
-  </span>
-</div>
-
 
           </div>
         </div>
@@ -100,12 +88,12 @@ QiangJia = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
         </ul>
       </div>
     </header>
@@ -126,144 +114,12 @@ QiangJia = Hexo</title>
       <div class="inner">
         <div id="main" class="pjax">
           
-  <div class="article wrap">
-    
-<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<i class="ic i-home"></i>
-<span><a href="/">首页</a></span>
-</div>
-
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://book.asmyun.com/2020/12/15/kettle-control-flow/">
-
-  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.jpg">
-    <meta itemprop="name" content="QiangJia">
-    <meta itemprop="description" content=", ">
-  </span>
-
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
-  </span>
-
-  <div class="body md" itemprop="articleBody">
-    
-
-    <ul>
-<li><a href="#Switch/case">Switch/case</a></li>
-<li><a href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95">过滤记录</a></li>
-<li><a href="#%E7%A9%BA%E6%93%8D%E4%BD%9C">空操作</a></li>
-<li><a href="#%E4%B8%AD%E6%AD%A2">中止</a></li>
-<li><a href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81">检测空流</a></li>
-<li><a href="#Blocking+step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89">Blocking step（阻塞数据）</a></li>
-</ul>
-<h5 id="switchcase"><a class="markdownIt-Anchor" href="#switchcase">#</a> Switch/case</h5>
-<p>数据流从一路到多路，等同 java 中 switch</p>
-<img data-src="/2020/12/15/kettle-control-flow/jxe3r6lbml.png" class="">
-<h5 id="过滤记录"><a class="markdownIt-Anchor" href="#过滤记录">#</a> 过滤记录</h5>
-<p>从一路到两路，等同 java 中 if</p>
-<img data-src="/2020/12/15/kettle-control-flow/2k4z2t7s5i.png" class="">
-<h5 id="空操作"><a class="markdownIt-Anchor" href="#空操作">#</a> 空操作</h5>
-<p>数据流的终点</p>
-<img data-src="/2020/12/15/kettle-control-flow/qeacjl4b55.png" class="">
-<h5 id="中止"><a class="markdownIt-Anchor" href="#中止">#</a> 中止</h5>
-<p>数据流的终点，如果有数据到这里，将会报错。用来校验数据的时候使用</p>
-<img data-src="/2020/12/15/kettle-control-flow/eslpl1d7w3.png" class="">
-<h5 id="检测空流"><a class="markdownIt-Anchor" href="#检测空流">#</a> 检测空流</h5>
-<p>如果数据流为空（即数据流不包含任何行），则此步骤将输出一行。 输出行将具有与输入行相同的字段，但是所有字段值将为空（NULL）<br>
-如果数据流不为空，则不会输出任何内容</p>
-<img data-src="/2020/12/15/kettle-control-flow/1608283112.png" class="">
-<h5 id="blocking-step阻塞数据"><a class="markdownIt-Anchor" href="#blocking-step阻塞数据">#</a> Blocking step（阻塞数据）</h5>
-<p>有多条数据时，只会通过最后一条数据</p>
-<img data-src="/2020/12/15/kettle-control-flow/1608283356.png" class="">
-
-  </div>
-
-   <footer>
-
-    <div class="meta">
-  <span class="item">
-    <span class="icon">
-      <i class="ic i-calendar-check"></i>
-    </span>
-    <span class="text">更新于</span>
-    <time title="修改时间：2020-12-18 17:24:17" itemprop="dateModified" datetime="2020-12-18T17:24:17+08:00">2020-12-18</time>
-  </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> 赞赏</button>
-  <p>请我喝[茶]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="/images/wechatpay.png" alt="QiangJia 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/alipay.png" alt="QiangJia 支付宝">
-        <p>支付宝</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/paypal.png" alt="QiangJia 贝宝">
-        <p>贝宝</p>
+  <div class="collapse wrap">
+      <h2 class="item title"><a href="/">首页</a> <small>/</small> 暂无标签</h2>
+      <div class="tag cloud">
+        
       </div>
   </div>
-</div>
-
-      
-
-<div id="copyright">
-<ul>
-  <li class="author">
-    <strong>本文作者： </strong>QiangJia <i class="ic i-at"><em>@</em></i>Hexo
-  </li>
-  <li class="link">
-    <strong>本文链接：</strong>
-    <a href="http://book.asmyun.com/2020/12/15/kettle-control-flow/" title="kettle流程控件">http://book.asmyun.com/2020/12/15/kettle-control-flow/</a>
-  </li>
-  <li class="license">
-    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-  </footer>
-
-</article>
-
-  </div>
-  
-
-<div class="post-nav">
-    <div class="item left">
-      
-
-  <a href="/2020/12/15/kettle-control-utility/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="kettle应用控件">
-  <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>kettle应用控件</h3>
-  </a>
-
-    </div>
-    <div class="item right">
-      
-
-  <a href="/2020/12/15/kettle-control-scripting/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="kettle脚本控件">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>kettle脚本控件</h3>
-  </a>
-
-    </div>
-</div>
-
-  
-  <div class="wrap" id="comments"></div>
-
 
         </div>
         <div id="sidebar">
@@ -274,7 +130,6 @@ QiangJia = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#switchcase"><span class="toc-number">1.</span> <span class="toc-text"> Switch&#x2F;case</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text"> 过滤记录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A9%BA%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text"> 空操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E6%AD%A2"><span class="toc-number">4.</span> <span class="toc-text"> 中止</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81"><span class="toc-number">5.</span> <span class="toc-text"> 检测空流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#blocking-step%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE"><span class="toc-number">6.</span> <span class="toc-text"> Blocking step（阻塞数据）</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -352,12 +207,10 @@ QiangJia = Hexo</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/12/15/kettle-control-utility/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/12/15/kettle-control-scripting/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -379,64 +232,19 @@ QiangJia = Hexo</title>
   <li class="item">
     
 <div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-transform/" title="kettle转换控件">kettle转换控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
     <span><a href="/2020/12/14/kettle/" title="kettle">kettle</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/15/kettle-control-utility/" title="kettle应用控件">kettle应用控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/15/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/14/kettle-install/" title="kettle安装">kettle安装</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/14/kettle-one/" title="编写第一个作业">编写第一个作业</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/12/15/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
   </li>
 
       
@@ -454,7 +262,7 @@ QiangJia = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/12/16/kettle-demo/" title="kettle_demo">kettle_demo</a></span>
+    <span><a href="/2020/12/15/kettle-control-scripting/" title="kettle脚本控件">kettle脚本控件</a></span>
   </li>
 
       
@@ -463,7 +271,52 @@ QiangJia = Hexo</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2020/12/15/kettle-control-transform/" title="kettle转换控件">kettle转换控件</a></span>
+    <span><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-output/" title="kettle输出控件">kettle输出控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-lookup/" title="kettle查询控件">kettle查询控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-flow/" title="kettle流程控件">kettle流程控件</a></span>
   </li>
 
   </ul>
@@ -494,7 +347,7 @@ QiangJia = Hexo</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2020/12/15/kettle-control-flow/',
+    path: 'tags/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"

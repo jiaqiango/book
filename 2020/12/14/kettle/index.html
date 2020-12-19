@@ -1,350 +1,541 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <title>
-        kettle |
-        
-        Keep
-    </title>
-    <link rel="shortcut icon" href="/images/logo.svg">
-    
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/css/font-awesome.min.css">
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"book.asmyun.com","root":"/"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":true,"expand_all":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.png","favicon":"/images/logo.svg","img_position":"left","left_side_width":"260px","content_max_width":"900px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."}},"local_search":{"enable":false,"trigger":"auto","unescape":false,"preload":false},"version":"3.0.4"};
-    KEEP.language = {"search":"搜索...","prev":"上一页","next":"下一页","prev_posts":"上一篇","next_posts":"下一篇","page":"第 %d 页","recent_posts":"最新文章","share":"分享","powered_by":"由 %s 驱动","theme":"主题","rss_feed":"RSS Feed","category":"分类","categories":"分类","tag":"标签","tags":"标签","tagcloud":"标签云","comment":"评论","home":"首页","archive":"归档","archives":"归档","about":"关于","site_uv":"访问人数","site_pv":"总访问量","links":"友链","link":"友链","top":"顶置","read_more":"阅读全文","wordcount":"字","min2read":"分钟","changelog":"更新日志","copyright":{"title":"本文标题","author":"本文作者","link":"本文链接","create_time":"创建时间","license_title":"版权声明","license_content":"本博客所有文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"},"ago":{"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"}};
-  </script>
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://book.asmyun.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://book.asmyun.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://book.asmyun.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://book.asmyun.com/2020/12/14/kettle/">
+
+
+
+  <title>
+kettle - kettle |
+QiangJia = Hexo</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
-
-
-<body>
-<div class="page-container">
-
-    
-
-    <header class="page-header">
-        <div class="header-progress"></div>
-    </header>
-
-    <main class="page-main">
-
-        <div class="page-main-content">
-
-            <div class="page-main-content-top">
-                <header class="header-wrapper">
-
-    <div class="header-content">
-        <a class="logo-title" href="/">
-            Keep
-        </a>
-
-        <ul class="menu-list">
-            
-                <li class="menu-item">
-                    <a class=""
-                       href="/"
-                    >
-                        首页
-                    </a>
-                </li>
-            
-                <li class="menu-item">
-                    <a class=""
-                       href="/categories"
-                    >
-                        分类
-                    </a>
-                </li>
-            
-                <li class="menu-item">
-                    <a class=""
-                       href="/tags"
-                    >
-                        标签
-                    </a>
-                </li>
-            
-                <li class="menu-item">
-                    <a class=""
-                       href="/archives"
-                    >
-                        归档
-                    </a>
-                </li>
-            
-        </ul>
-
-        <div class="menu-bar">
-            <div class="menu-bar-middle"></div>
-        </div>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/">首页</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">分类</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">标签</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">归档</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-            </div>
-
-            <div class="page-main-content-middle">
-
-                <main class="main-content normal-code-theme">
-
-                    
-                        <div class="fade-in-down-animation">
-    <div class="article-content-container">
-
-        <div class="article-title">
-            <span class="title-hover-animation">kettle</span>
-        </div>
-
-        
-            <div class="article-header">
-                <div class="avatar">
-                    <img src="/images/avatar.png">
-                </div>
-                <div class="info">
-                    <div class="author">
-                        <span>QiangJia</span>
-                        <span class="level">Lv2</span>
-                    </div>
-                    <div class="meta-info">
-                        <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fas fa-calendar"></i> 2020-12-14 14:13:49
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">kettle
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-12-14 14:13:49">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-    
-    
-
-    
-    
-    
-    
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-12-14T14:13:49+08:00">2020-12-14</time>
+  </span>
 </div>
 
-                    </div>
-                </div>
-            </div>
-        
 
-        <div class="article-content markdown-body">
-            <ul>
-<li><a href="/2020/12/14/kettle-install/" title="安装kettle">安装kettle</a></li>
-<li><a href="/2020/12/14/kettle-one/" title="编写第一个作业">编写第一个作业</a></li>
-<li><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></li>
-<li><a href="/2020/12/16/kettle-demo/" title="kettle示例">kettle示例</a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">QiangJia</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
 
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/kettle/" itemprop="item" rel="index" title="分类于 kettle"><span itemprop="name">kettle</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://book.asmyun.com/2020/12/14/kettle/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="QiangJia">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <ul>
+<li>
+<a href="/2020/12/14/kettle-install/" title="安装kettle">安装kettle</a>
+</li>
+<li>
+<a href="/2020/12/14/kettle-one/" title="编写第一个作业">编写第一个作业</a>
+</li>
+<li>
+<a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a>
+</li>
+<li>
+<a href="/2020/12/16/kettle-demo/" title="kettle示例">kettle示例</a>
 </li>
 </ul>
-<h3 id="ETL介绍"><a href="#ETL介绍" class="headerlink" title="ETL介绍"></a>ETL介绍</h3><h4 id="ETL是什么"><a href="#ETL是什么" class="headerlink" title="ETL是什么"></a>ETL是什么</h4><p>ETL分别是“Extract”、“ Transform” 、“Load”三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取</p>
-<h4 id="ETL工具"><a href="#ETL工具" class="headerlink" title="ETL工具"></a>ETL工具</h4><p>ETL的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作<br>目前，ETL工具的典型代表有:<br>商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS<br>开源软件：Kettle、Talend、CloverETL、Ketl，Octopus</p>
-<h3 id="Kettle介绍"><a href="#Kettle介绍" class="headerlink" title="Kettle介绍"></a>Kettle介绍</h3><p>Kettle是Pentaho的一个组件，主要用于数据库间的数据迁移。<br>Kettle自己有三个主要组件：Spoon，Kitchen，Pan</p>
-<h4 id="Spoon"><a href="#Spoon" class="headerlink" title="Spoon"></a>Spoon</h4><p>图形化界面工具(GUI方式)，Spoon允许你通过图形界面来设计Job和Transformation，可以保存为文件或者保存在数据库中。<br>也可以直接在Spoon图形化界面中运行Job和Transformation，</p>
-<h4 id="Pan"><a href="#Pan" class="headerlink" title="Pan"></a>Pan</h4><p>Transformation执行器(命令行方式)，Pan用于在终端执行Transformation，没有图形界面。</p>
-<h4 id="Kitchen"><a href="#Kitchen" class="headerlink" title="Kitchen"></a>Kitchen</h4><p>Job执行器(命令行方式)，Kitchen用于在终端执行Job，没有图形界面。</p>
-<h4 id="Carte"><a href="#Carte" class="headerlink" title="Carte"></a>Carte</h4><p>嵌入式Web服务，用于远程执行Job或Transformation，Kettle通过Carte建立集群。</p>
-<h4 id="Encr"><a href="#Encr" class="headerlink" title="Encr"></a>Encr</h4><p>Kettle用于字符串加密的命令行工具，如：对在Job或Transformation中定义的数据库连接参数进行加密。</p>
+<h3 id="etl介绍"><a class="markdownIt-Anchor" href="#etl介绍">#</a> ETL 介绍</h3>
+<h4 id="etl是什么"><a class="markdownIt-Anchor" href="#etl是什么">#</a> ETL 是什么</h4>
+<p>ETL 分别是 “Extract”、“ Transform” 、“Load” 三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取</p>
+<h4 id="etl工具"><a class="markdownIt-Anchor" href="#etl工具">#</a> ETL 工具</h4>
+<p>ETL 的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作<br>
+目前，ETL 工具的典型代表有:<br>
+ 商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS<br>
+ 开源软件：Kettle、Talend、CloverETL、Ketl，Octopus</p>
+<h3 id="kettle介绍"><a class="markdownIt-Anchor" href="#kettle介绍">#</a> Kettle 介绍</h3>
+<p>Kettle 是 Pentaho 的一个组件，主要用于数据库间的数据迁移。<br>
+Kettle 自己有三个主要组件：Spoon，Kitchen，Pan</p>
+<h4 id="spoon"><a class="markdownIt-Anchor" href="#spoon">#</a> Spoon</h4>
+<p>图形化界面工具 (GUI 方式)，Spoon 允许你通过图形界面来设计 Job 和 Transformation，可以保存为文件或者保存在数据库中。<br>
+也可以直接在 Spoon 图形化界面中运行 Job 和 Transformation，</p>
+<h4 id="pan"><a class="markdownIt-Anchor" href="#pan">#</a> Pan</h4>
+<p>Transformation 执行器 (命令行方式)，Pan 用于在终端执行 Transformation，没有图形界面。</p>
+<h4 id="kitchen"><a class="markdownIt-Anchor" href="#kitchen">#</a> Kitchen</h4>
+<p>Job 执行器 (命令行方式)，Kitchen 用于在终端执行 Job，没有图形界面。</p>
+<h4 id="carte"><a class="markdownIt-Anchor" href="#carte">#</a> Carte</h4>
+<p>嵌入式 Web 服务，用于远程执行 Job 或 Transformation，Kettle 通过 Carte 建立集群。</p>
+<h4 id="encr"><a class="markdownIt-Anchor" href="#encr">#</a> Encr</h4>
+<p>Kettle 用于字符串加密的命令行工具，如：对在 Job 或 Transformation 中定义的数据库连接参数进行加密。</p>
 
-        </div>
+  </div>
 
-        
-            <div class="post-copyright-info">
-                <div class="article-copyright-info-container">
-    <ul>
-        <li>本文标题：kettle</li>
-        <li>本文作者：QiangJia</li>
-        <li>创建时间：2020-12-14 14:13:49</li>
-        <li>
-            本文链接：https://book.asmyun.com/2020/12/14/kettle/
-        </li>
-        <li>
-            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
-        </li>
-    </ul>
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-12-18 20:45:33" itemprop="dateModified" datetime="2020-12-18T20:45:33+08:00">2020-12-18</time>
+  </span>
 </div>
 
-            </div>
-        
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="QiangJia 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="QiangJia 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="QiangJia 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
 
-        
-            <div class="article-nav">
-                
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2020/12/14/kettle-one/"
-                        >
-                            <span class="left arrow-icon flex-center" >
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">编写第一个作业</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
-                
-            </div>
-        
+      
 
-        
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>QiangJia <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://book.asmyun.com/2020/12/14/kettle/" title="kettle">http://book.asmyun.com/2020/12/14/kettle/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2020/12/14/kettle-one/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuv0socj20zk0m8qes.jpg" title="编写第一个作业">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>编写第一个作业</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2020/12/14/kettle-install/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="kettle安装">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>kettle安装</h3>
+  </a>
+
     </div>
 </div>
 
+  
+  <div class="wrap" id="comments"></div>
 
-                    
-                </main>
 
-            </div>
-
-            <div class="page-main-content-bottom">
-                <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
-            
-              <span>2020</span> -
-            
-            2020 <i class="fas fa-heart icon-animate"></i> <a href="/">QiangJia</a>
         </div>
-        
-        <div class="theme-info info-item">
-            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动 | 主题 <a class="theme-version" target="_blank"></a>
-        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#etl%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text"> ETL 介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#etl%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.1.</span> <span class="toc-text"> ETL 是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#etl%E5%B7%A5%E5%85%B7"><span class="toc-number">1.2.</span> <span class="toc-text"> ETL 工具</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kettle%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text"> Kettle 介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#spoon"><span class="toc-number">2.1.</span> <span class="toc-text"> Spoon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pan"><span class="toc-number">2.2.</span> <span class="toc-text"> Pan</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#kitchen"><span class="toc-number">2.3.</span> <span class="toc-text"> Kitchen</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#carte"><span class="toc-number">2.4.</span> <span class="toc-text"> Carte</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#encr"><span class="toc-number">2.5.</span> <span class="toc-text"> Encr</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2020/12/14/kettle/" rel="bookmark" title="kettle">kettle</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="QiangJia"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">QiangJia</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">14</span>
+        <span class="name">文章</span>
+      </a>
     </div>
-</footer>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">1</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+</nav>
 
-            </div>
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2020/12/14/kettle-one/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2020/12/14/kettle-install/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
         </div>
+        <div class="dimmer"></div>
+      </div>
     </main>
-
-    <div class="sidebar-tools">
-        <div class="tools-container">
-    <ul class="tools-list">
-        
-
-        
-
-        <!-- TOC aside toggle -->
-        
-
-    </ul>
-</div>
-
-    </div>
-
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        <li class="tools-item tool-scroll-to-top flex-center">
-            <i class="fas fa-arrow-up"></i>
-        </li>
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="tools-ul-1">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-
-    </ul>
-</div>
-
-    </div>
-
-    <!-- page aside -->
-    <aside class="page-aside">
-        
-            <div class="post-toc-wrap">
-    <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ETL%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">ETL介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ETL%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.1.</span> <span class="nav-text">ETL是什么</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ETL%E5%B7%A5%E5%85%B7"><span class="nav-number">1.2.</span> <span class="nav-text">ETL工具</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kettle%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">Kettle介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Spoon"><span class="nav-number">2.1.</span> <span class="nav-text">Spoon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Pan"><span class="nav-number">2.2.</span> <span class="nav-text">Pan</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Kitchen"><span class="nav-number">2.3.</span> <span class="nav-text">Kitchen</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Carte"><span class="nav-number">2.4.</span> <span class="nav-text">Carte</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Encr"><span class="nav-number">2.5.</span> <span class="nav-text">Encr</span></a></li></ol></li></ol>
-    </div>
-</div>
-        
-    </aside>
-
-    <!-- image viewer -->
-    <div class="image-viewer-container">
-    <div class="img-box">
-        <img src="">
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/dark-light-toggle.js"></script>
-
-
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/left-side-toggle.js"></script>
-
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
     
-        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.0.4/source/js/code-copy.js"></script>
-    
+<div class="breadcrumb">
+</div>
 
+    <span><a href="/2020/12/15/kettle-control-lookup/" title="kettle查询控件">kettle查询控件</a></span>
+  </li>
+
+      
+  <li class="item">
     
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/14/kettle-install/" title="kettle安装">kettle安装</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-flow/" title="kettle流程控件">kettle流程控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control/" title="组件介绍">组件介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/14/kettle-one/" title="编写第一个作业">编写第一个作业</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-transform/" title="kettle转换控件">kettle转换控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/16/kettle-demo/" title="kettle_demo">kettle_demo</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2020/12/15/kettle-control-utility/" title="kettle应用控件">kettle应用控件</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2020</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">QiangJia @ QiangJia</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2020/12/14/kettle/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
 
 
 </body>
