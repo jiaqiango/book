@@ -2,6 +2,7 @@
 title: kettle安装
 date: 2020-12-14 14:13:49
 tags:
+categories: kettle
 ---
 
 ### 官网

@@ -2,6 +2,7 @@
 title: kettle输出控件
 date: 2020-12-15 14:34:27
 tags:
+categories: kettle
 ---
 
 - [Excel输出](#Excel输出)

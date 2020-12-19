@@ -7,7 +7,7 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: QiangJia
 language: zh-CN
 timezone: ''
 
@@ -69,6 +69,8 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  Java: java
+  kettle: kettle
 tag_map:
 
 # Metadata elements
@@ -98,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: keep
+theme: shoka
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
