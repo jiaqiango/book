@@ -74,7 +74,7 @@ QiangJia = Hexo</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>476</span>
+    <span>473</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -115,12 +115,12 @@ QiangJia = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,46 +174,43 @@ QiangJia = Hexo</title>
 <li><a href="#%E8%AE%B0%E5%BD%95%E9%9B%86%E8%BF%9E%E6%8E%A5">记录集连接</a></li>
 <li><a href="#%E8%AE%B0%E5%BD%95%E5%85%B3%E8%81%94">记录关联</a></li>
 </ul>
-<h5 id="合并记录"><a class="markdownIt-Anchor" href="#合并记录">#</a> 合并记录</h5>
-<p>将两个不同来源的数据合并，这两个来源的数据分别为旧数据和新数据，该步骤将旧数据和新数据按照指定的关键字匹配、比较、合并</p>
+<h5 id="合并记录"><a href="#合并记录" class="headerlink" title="合并记录"></a>合并记录</h5><p>将两个不同来源的数据合并，这两个来源的数据分别为旧数据和新数据，该步骤将旧数据和新数据按照指定的关键字匹配、比较、合并</p>
 <ul>
-<li>需要设置的参数：
-<ul>
+<li>需要设置的参数：<ul>
 <li>旧数据来源：旧数据来源的步骤。</li>
 <li>新数据来源：新数据来源的步骤。</li>
 </ul>
 </li>
-<li>标志字段：设置标志字段的名称，标志字段用于保存比较的结果，比较结果有下列几种。
-<ul>
+<li>标志字段：设置标志字段的名称，标志字段用于保存比较的结果，比较结果有下列几种。<ul>
 <li>“identical”，旧数据和新数据一样。</li>
 <li>“changed” ，数据发生了变化。</li>
 <li>“new”， 新数据中有而旧数据中没有的记录。</li>
 <li>“deleted”，旧数据中有而新数据中没有的记录。</li>
 </ul>
 </li>
-<li>关键字段：用于定位两个数据源中的同一条记录。
-<ul>
+<li>关键字段：用于定位两个数据源中的同一条记录。<ul>
 <li>比较字段：对于两个数据源中的同一条记录中，指定需要比较的字段。</li>
 <li>合并后的数据将包括旧数据来源和新数据来源里的所有数据，对于变化的数据，使用新数据代替旧数据，同时在结果里用一个标示字段，来指定新旧数据的比较结果。</li>
 </ul>
 </li>
-<li>注意：
-<ul>
+<li>注意：<ul>
 <li>旧数据和新数据需要事先按照关键字段排序。</li>
 <li>旧数据和新数据要有相同的字段名称。</li>
 </ul>
 </li>
 </ul>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-joins/ikppamhpim.png" class="">
-<h5 id="记录集连接"><a class="markdownIt-Anchor" href="#记录集连接">#</a> 记录集连接</h5>
-<p>数据库的左连接、右连接、内连接、外连接。</p>
+
+<h5 id="记录集连接"><a href="#记录集连接" class="headerlink" title="记录集连接"></a>记录集连接</h5><p>数据库的左连接、右连接、内连接、外连接。</p>
 <ul>
-<li>注意：在进行记录集连接之前，应该要对记录集进行排序</li>
+<li>注意：在进行记录集连接之前，应该要对记录集进行排序<img data-src="/2020/12/15/computer-science/kettle/kettle-control-joins/rnsq3ft2g8.png" class="">
+
+</li>
 </ul>
-<img data-src="/2020/12/15/computer-science/kettle/kettle-control-joins/rnsq3ft2g8.png" class="">
-<h5 id="记录关联"><a class="markdownIt-Anchor" href="#记录关联">#</a> 记录关联</h5>
-<p>对两个数据流进行笛卡尔积</p>
+<h5 id="记录关联"><a href="#记录关联" class="headerlink" title="记录关联"></a>记录关联</h5><p>对两个数据流进行笛卡尔积</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-joins/y9xbnutwp2.png" class="">
+
+
 
   </div>
 
@@ -288,7 +285,7 @@ QiangJia = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="kettle查询控件">
+  <a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="kettle查询控件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> kettle</span>
   <h3>kettle查询控件</h3>
@@ -298,7 +295,7 @@ QiangJia = Hexo</title>
     <div class="item right">
       
 
-  <a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciszlczyj20zk0m816d.jpg" title="kettle映射控件">
+  <a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuv0socj20zk0m8qes.jpg" title="kettle映射控件">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> kettle</span>
   <h3>kettle映射控件</h3>
@@ -320,11 +317,11 @@ QiangJia = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text"> 合并记录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E9%9B%86%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text"> 记录集连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E5%85%B3%E8%81%94"><span class="toc-number">3.</span> <span class="toc-text"> 记录关联</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E8%AE%B0%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">合并记录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E9%9B%86%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">记录集连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E5%85%B3%E8%81%94"><span class="toc-number">3.</span> <span class="toc-text">记录关联</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/2020/12/14/computer-science/kettle/kettle-install/" rel="bookmark" title="kettle安装">kettle安装</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle-one/" rel="bookmark" title="编写第一个作业">编写第一个作业</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle/" rel="bookmark" title="kettle">kettle</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control/" rel="bookmark" title="组件介绍">组件介绍</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" rel="bookmark" title="kettle输入控件">kettle输入控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-output/" rel="bookmark" title="kettle输出控件">kettle输出控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-transform/" rel="bookmark" title="kettle转换控件">kettle转换控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" rel="bookmark" title="kettle应用控件">kettle应用控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" rel="bookmark" title="kettle流程控件">kettle流程控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" rel="bookmark" title="kettle脚本控件">kettle脚本控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" rel="bookmark" title="kettle查询控件">kettle查询控件</a></li><li class="active"><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" rel="bookmark" title="kettle连接控件">kettle连接控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" rel="bookmark" title="kettle映射控件">kettle映射控件</a></li><li><a href="/2020/12/16/computer-science/kettle/kettle-demo/" rel="bookmark" title="kettle_demo">kettle_demo</a></li>
+          <li><a href="/2020/12/14/computer-science/kettle/kettle-install/" rel="bookmark" title="kettle安装">kettle安装</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle/" rel="bookmark" title="kettle">kettle</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle-one/" rel="bookmark" title="编写第一个作业">编写第一个作业</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control/" rel="bookmark" title="组件介绍">组件介绍</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" rel="bookmark" title="kettle输入控件">kettle输入控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-output/" rel="bookmark" title="kettle输出控件">kettle输出控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-transform/" rel="bookmark" title="kettle转换控件">kettle转换控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" rel="bookmark" title="kettle应用控件">kettle应用控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" rel="bookmark" title="kettle流程控件">kettle流程控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" rel="bookmark" title="kettle脚本控件">kettle脚本控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" rel="bookmark" title="kettle查询控件">kettle查询控件</a></li><li class="active"><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" rel="bookmark" title="kettle连接控件">kettle连接控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" rel="bookmark" title="kettle映射控件">kettle映射控件</a></li><li><a href="/2020/12/16/computer-science/kettle/kettle-demo/" rel="bookmark" title="kettle_demo">kettle_demo</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -440,70 +437,22 @@ QiangJia = Hexo</title>
 <div class="breadcrumb">
 <a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/2012/01/04/computer-science/java/java-install/" title="Java安装&amp;&amp;配置">Java安装&&配置</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" title="kettle应用控件">kettle应用控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control/" title="组件介绍">组件介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
     <span><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" title="kettle脚本控件">kettle脚本控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/14/computer-science/kettle/kettle-one/" title="编写第一个作业">编写第一个作业</a></span>
   </li>
 
       
@@ -527,7 +476,19 @@ QiangJia = Hexo</title>
 <a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" title="kettle查询控件">kettle查询控件</a></span>
+    <span><a href="/2020/12/14/computer-science/kettle/kettle-install/" title="kettle安装">kettle安装</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/14/computer-science/kettle/kettle/" title="kettle">kettle</a></span>
   </li>
 
       
@@ -548,10 +509,46 @@ QiangJia = Hexo</title>
 <div class="breadcrumb">
 <a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" title="kettle查询控件">kettle查询控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/linux/" title="分类于 linux">linux</a>
 </div>
 
-    <span><a href="/2021/01/04/computer-science/linux/linux-yum/" title="Linux-YUM使用">Linux-YUM使用</a></span>
+    <span><a href="/2021/01/04/computer-science/linux/linux-apt/" title="Linux-APT使用">Linux-APT使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
   </li>
 
   </ul>
@@ -576,13 +573,13 @@ QiangJia = Hexo</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">7k 字</span>
+    <span title="站点总字数">8k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

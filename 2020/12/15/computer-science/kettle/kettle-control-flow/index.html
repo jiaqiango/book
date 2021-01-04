@@ -74,7 +74,7 @@ QiangJia = Hexo</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>264</span>
+    <span>258</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -115,12 +115,12 @@ QiangJia = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
         </ul>
       </div>
     </header>
@@ -177,25 +177,24 @@ QiangJia = Hexo</title>
 <li><a href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81">检测空流</a></li>
 <li><a href="#Blocking+step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89">Blocking step（阻塞数据）</a></li>
 </ul>
-<h5 id="switchcase"><a class="markdownIt-Anchor" href="#switchcase">#</a> Switch/case</h5>
-<p>数据流从一路到多路，等同 java 中 switch</p>
+<h5 id="Switch-case"><a href="#Switch-case" class="headerlink" title="Switch/case"></a>Switch/case</h5><p>数据流从一路到多路,等同java中switch</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/jxe3r6lbml.png" class="">
-<h5 id="过滤记录"><a class="markdownIt-Anchor" href="#过滤记录">#</a> 过滤记录</h5>
-<p>从一路到两路，等同 java 中 if</p>
+
+<h5 id="过滤记录"><a href="#过滤记录" class="headerlink" title="过滤记录"></a>过滤记录</h5><p>从一路到两路,等同java中if</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/2k4z2t7s5i.png" class="">
-<h5 id="空操作"><a class="markdownIt-Anchor" href="#空操作">#</a> 空操作</h5>
-<p>数据流的终点</p>
+
+<h5 id="空操作"><a href="#空操作" class="headerlink" title="空操作"></a>空操作</h5><p>数据流的终点</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/qeacjl4b55.png" class="">
-<h5 id="中止"><a class="markdownIt-Anchor" href="#中止">#</a> 中止</h5>
-<p>数据流的终点，如果有数据到这里，将会报错。用来校验数据的时候使用</p>
+
+<h5 id="中止"><a href="#中止" class="headerlink" title="中止"></a>中止</h5><p>数据流的终点，如果有数据到这里，将会报错。用来校验数据的时候使用</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/eslpl1d7w3.png" class="">
-<h5 id="检测空流"><a class="markdownIt-Anchor" href="#检测空流">#</a> 检测空流</h5>
-<p>如果数据流为空（即数据流不包含任何行），则此步骤将输出一行。 输出行将具有与输入行相同的字段，但是所有字段值将为空（NULL）<br>
-如果数据流不为空，则不会输出任何内容</p>
+
+<h5 id="检测空流"><a href="#检测空流" class="headerlink" title="检测空流"></a>检测空流</h5><p>如果数据流为空（即数据流不包含任何行），则此步骤将输出一行。 输出行将具有与输入行相同的字段，但是所有字段值将为空（NULL）<br>如果数据流不为空，则不会输出任何内容</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/1608283112.png" class="">
-<h5 id="blocking-step阻塞数据"><a class="markdownIt-Anchor" href="#blocking-step阻塞数据">#</a> Blocking step（阻塞数据）</h5>
-<p>有多条数据时，只会通过最后一条数据</p>
+
+<h5 id="Blocking-step（阻塞数据）"><a href="#Blocking-step（阻塞数据）" class="headerlink" title="Blocking step（阻塞数据）"></a>Blocking step（阻塞数据）</h5><p>有多条数据时，只会通过最后一条数据</p>
 <img data-src="/2020/12/15/computer-science/kettle/kettle-control-flow/1608283356.png" class="">
+
 
   </div>
 
@@ -270,7 +269,7 @@ QiangJia = Hexo</title>
     <div class="item left">
       
 
-  <a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitspjpbj20zk0m81ky.jpg" title="kettle应用控件">
+  <a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="kettle应用控件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> kettle</span>
   <h3>kettle应用控件</h3>
@@ -280,7 +279,7 @@ QiangJia = Hexo</title>
     <div class="item right">
       
 
-  <a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="kettle脚本控件">
+  <a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4fomxoj20zk0m8axp.jpg" title="kettle脚本控件">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> kettle</span>
   <h3>kettle脚本控件</h3>
@@ -302,11 +301,11 @@ QiangJia = Hexo</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#switchcase"><span class="toc-number">1.</span> <span class="toc-text"> Switch&#x2F;case</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text"> 过滤记录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A9%BA%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text"> 空操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E6%AD%A2"><span class="toc-number">4.</span> <span class="toc-text"> 中止</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81"><span class="toc-number">5.</span> <span class="toc-text"> 检测空流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#blocking-step%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE"><span class="toc-number">6.</span> <span class="toc-text"> Blocking step（阻塞数据）</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#Switch-case"><span class="toc-number">1.</span> <span class="toc-text">Switch&#x2F;case</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">过滤记录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A9%BA%E6%93%8D%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">空操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E6%AD%A2"><span class="toc-number">4.</span> <span class="toc-text">中止</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81"><span class="toc-number">5.</span> <span class="toc-text">检测空流</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Blocking-step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">Blocking step（阻塞数据）</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/2020/12/14/computer-science/kettle/kettle-install/" rel="bookmark" title="kettle安装">kettle安装</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle-one/" rel="bookmark" title="编写第一个作业">编写第一个作业</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle/" rel="bookmark" title="kettle">kettle</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control/" rel="bookmark" title="组件介绍">组件介绍</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" rel="bookmark" title="kettle输入控件">kettle输入控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-output/" rel="bookmark" title="kettle输出控件">kettle输出控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-transform/" rel="bookmark" title="kettle转换控件">kettle转换控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" rel="bookmark" title="kettle应用控件">kettle应用控件</a></li><li class="active"><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" rel="bookmark" title="kettle流程控件">kettle流程控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" rel="bookmark" title="kettle脚本控件">kettle脚本控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" rel="bookmark" title="kettle查询控件">kettle查询控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" rel="bookmark" title="kettle连接控件">kettle连接控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" rel="bookmark" title="kettle映射控件">kettle映射控件</a></li><li><a href="/2020/12/16/computer-science/kettle/kettle-demo/" rel="bookmark" title="kettle_demo">kettle_demo</a></li>
+          <li><a href="/2020/12/14/computer-science/kettle/kettle-install/" rel="bookmark" title="kettle安装">kettle安装</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle/" rel="bookmark" title="kettle">kettle</a></li><li><a href="/2020/12/14/computer-science/kettle/kettle-one/" rel="bookmark" title="编写第一个作业">编写第一个作业</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control/" rel="bookmark" title="组件介绍">组件介绍</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" rel="bookmark" title="kettle输入控件">kettle输入控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-output/" rel="bookmark" title="kettle输出控件">kettle输出控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-transform/" rel="bookmark" title="kettle转换控件">kettle转换控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" rel="bookmark" title="kettle应用控件">kettle应用控件</a></li><li class="active"><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" rel="bookmark" title="kettle流程控件">kettle流程控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" rel="bookmark" title="kettle脚本控件">kettle脚本控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" rel="bookmark" title="kettle查询控件">kettle查询控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" rel="bookmark" title="kettle连接控件">kettle连接控件</a></li><li><a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" rel="bookmark" title="kettle映射控件">kettle映射控件</a></li><li><a href="/2020/12/16/computer-science/kettle/kettle-demo/" rel="bookmark" title="kettle_demo">kettle_demo</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -425,43 +424,19 @@ QiangJia = Hexo</title>
 <a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
-    <span><a href="/2020/12/14/computer-science/kettle/kettle/" title="kettle">kettle</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/2012/01/04/computer-science/java/java-type-data/" title="Java数据类型">Java数据类型</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/16/computer-science/kettle/kettle-demo/" title="kettle_demo">kettle_demo</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
     <span><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/14/computer-science/kettle/kettle-install/" title="kettle安装">kettle安装</a></span>
   </li>
 
       
@@ -485,7 +460,29 @@ QiangJia = Hexo</title>
 <a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control/" title="组件介绍">组件介绍</a></span>
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" title="kettle脚本控件">kettle脚本控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" title="kettle应用控件">kettle应用控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/hadoop/" title="分类于 hadoop">hadoop</a>
+</div>
+
+    <span><a href="/2020/12/29/computer-science/hadoop/hadoop-install/" title="hadoop_install">hadoop_install</a></span>
   </li>
 
       
@@ -509,7 +506,19 @@ QiangJia = Hexo</title>
 <a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
 </div>
 
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" title="kettle流程控件">kettle流程控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/linux/" title="分类于 linux">linux</a>
+</div>
+
+    <span><a href="/2021/01/04/computer-science/linux/linux-yum/" title="Linux-YUM使用">Linux-YUM使用</a></span>
   </li>
 
       
@@ -522,18 +531,6 @@ QiangJia = Hexo</title>
 </div>
 
     <span><a href="/2020/12/15/computer-science/kettle/kettle-control-lookup/" title="kettle查询控件">kettle查询控件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
-</div>
-
-    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-mapping/" title="kettle映射控件">kettle映射控件</a></span>
   </li>
 
   </ul>
@@ -558,13 +555,13 @@ QiangJia = Hexo</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">7k 字</span>
+    <span title="站点总字数">8k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
