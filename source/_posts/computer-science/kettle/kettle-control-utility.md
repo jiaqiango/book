@@ -2,7 +2,8 @@
 title: kettle应用控件
 date: 2020-12-15 14:36:09
 tags:
-categories: kettle
+categories:
+- [计算机科学, kettle]
 ---
 
 - [写日志](#写日志)

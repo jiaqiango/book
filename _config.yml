@@ -69,8 +69,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  计算机科学: computer-science
   Java: java
   kettle: kettle
+  hadoop: hadoop
 tag_map:
 
 # Metadata elements

@@ -2,7 +2,8 @@
 title: kettle脚本控件
 date: 2020-12-15 14:36:39
 tags:
-categories: kettle
+categories:
+- [计算机科学, kettle]
 ---
 
 - [Java代码](#Java代码)

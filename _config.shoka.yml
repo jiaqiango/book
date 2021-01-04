@@ -1,0 +1,126 @@
+alternate: QiangJia
+
+# Assets
+statics: / #//cdn.jsdelivr.net/gh/amehime/shoka@latest/
+
+open_graph:
+  #twitter_id:
+  #google_plus:
+  #fb_admins:
+  #fb_app_id:
+
+menu:
+  home: / || home
+  posts:
+    default: / || feather
+    archives: /archives/ || list-alt
+    categories: /categories/ || th
+    tags: /tags/ || tags
+  about: /about/ || user
+  friends: /friends/ || heart
+
+# Social Links
+# Usage: `Key: permalink || icon || color`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink,
+# secend value is the name of Font icon.
+social:
+  github: https://github.com/amehime || github || "#191717"
+  #google: https://plus.google.com/yourname || google
+  #twitter: https://twitter.com/amehime || twitter || "#00aff0"
+  zhihu: https://www.zhihu.com/people/rurismzk || zhihu || "#1e88e5"
+  music: https://music.163.com/#/user/home?id=12886823 || cloud-music || "#e60026"
+  weibo: https://weibo.com/amehime || weibo || "#ea716e"
+  about: https://about.me/amehime || address-card || "#3b5998"
+  #email: mailto:yourname@mail.com || envelope || "#55acd5"
+  #facebook: https://www.facebook.com/yourname || facebook
+  #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
+  #youtube: https://youtube.com/yourname || youtube
+  #instagram: https://instagram.com/yourname || instagram
+  #skype: skype:yourname?call|chat || skype
+  #douban: https://www.douban.com/people/yourname/ || douban
+
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2010
+  count: true
+
+post:
+  count: true
+
+
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# ---------------------------------------------------------------
+
+# Comments
+# Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+valine:
+  appId: A1OeqcjgUsKye3pqS0KyrIk3-MdYXbMMI
+  appKey: apGUIDAEOcsrtOURqkhmx7pn
+  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+  pageSize: 10 # Pagination size
+  lang: zh-CN
+  tagMember:
+    master:
+      # - deea5a8d259d17182a53be1772e4c182
+    friend:
+      - deea5a8d259d17182a53be1772e4c182
+
+# bgm
+audio:
+  - title: 列表1
+    list:
+      - https://music.163.com/#/playlist?id=2943811283
+      - https://music.163.com/#/playlist?id=2297706586
+  - title: 列表2
+    list:
+      - https://music.163.com/#/playlist?id=2031842656
+
+# Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
+pangu: true
+
+# ---------------------------------------------------------------
+# analytics & SEO Settings
+# ---------------------------------------------------------------
+
+
+# Disable Baidu transformation on mobile devices.
+disable_baidu_transformation: true
+
+# Automatically add external URL with Base64 encrypt & decrypt.
+exturl: true
+
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer: 
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样
+          tocClassName: 'toc'
+          anchorClassName: 'anchor'
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
