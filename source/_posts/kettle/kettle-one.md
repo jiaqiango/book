@@ -3,7 +3,7 @@ title: 编写第一个作业
 date: 2020-12-14 14:13:49
 tags:
 categories:
-- [计算机科学, kettle]
+- [kettle]
 ---
 
 ### 主界面介绍

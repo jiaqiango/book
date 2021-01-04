@@ -3,7 +3,7 @@ title: kettle
 date: 2020-12-14 14:13:49
 tags:
 categories:
-- [计算机科学, kettle]
+- [kettle]
 ---
 
 * {% post_link kettle-install 安装kettle %}

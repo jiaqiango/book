@@ -2,7 +2,7 @@
 title: Java安装&&配置
 date: 2012-01-04 11:16:54
 categories:
-- [计算机科学, java]
+- [java]
 tags:
 - [java]
 ---

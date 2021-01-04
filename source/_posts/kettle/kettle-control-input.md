@@ -3,7 +3,7 @@ title: kettle输入控件
 date: 2020-12-15 14:34:18
 tags:
 categories:
-- [计算机科学, kettle]
+- [kettle]
 ---
 
 - [CSV文件输入](#CSV文件输入)

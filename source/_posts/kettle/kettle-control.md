@@ -3,7 +3,7 @@ title: 组件介绍
 date: 2020-12-15 14:13:49
 tags:
 categories:
-- [计算机科学, kettle]
+- [kettle]
 ---
 
 * {% post_link kettle-control-input 输入 %}
