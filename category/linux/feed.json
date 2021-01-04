@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hexo • All posts by \"linux\" category",
+    "description": "",
+    "home_page_url": "http://book.asmyun.com",
+    "items": [
+        {
+            "id": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/",
+            "url": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/",
+            "title": "Linux-APT使用",
+            "date_published": "2021-01-04T05:36:06.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/",
+            "url": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/",
+            "title": "Linux-YUM使用",
+            "date_published": "2021-01-04T05:35:02.000Z",
+            "content_html": "",
+            "tags": []
+        }
+    ]
+}

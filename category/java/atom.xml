@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://book.asmyun.com</id>
+    <title>Hexo • Posts by &#34;java&#34; category</title>
+    <link href="http://book.asmyun.com" />
+    <updated>2012-01-04T03:20:33.000Z</updated>
+    <category term="java" />
+    <entry>
+        <id>http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/</id>
+        <title>Java数据类型</title>
+        <link rel="alternate" href="http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/"/>
+        <content type="html"></content>
+        <updated>2012-01-04T03:20:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2012/01/04/computer-science/java/java-install/</id>
+        <title>Java安装&amp;&amp;配置</title>
+        <link rel="alternate" href="http://book.asmyun.com/2012/01/04/computer-science/java/java-install/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#CSV%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;CSV 文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Excel%E8%BE%93%E5%85%A5&#34;&gt;Excel 输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;文本文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E8%AE%B0%E5%BD%95&#34;&gt;生成记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0&#34;&gt;生成随机数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%A8%E8%BE%93%E5%85%A5&#34;&gt;表输入&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="java" />
+        <updated>2012-01-04T03:16:54.000Z</updated>
+    </entry>
+</feed>

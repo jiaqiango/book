@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://book.asmyun.com</id>
+    <title>Hexo • Posts by &#34;linux&#34; category</title>
+    <link href="http://book.asmyun.com" />
+    <updated>2021-01-04T05:36:06.000Z</updated>
+    <category term="java" />
+    <entry>
+        <id>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/</id>
+        <title>Linux-APT使用</title>
+        <link rel="alternate" href="http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/"/>
+        <content type="html"></content>
+        <updated>2021-01-04T05:36:06.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/</id>
+        <title>Linux-YUM使用</title>
+        <link rel="alternate" href="http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/"/>
+        <content type="html"></content>
+        <updated>2021-01-04T05:35:02.000Z</updated>
+    </entry>
+</feed>

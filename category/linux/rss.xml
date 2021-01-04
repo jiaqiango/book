@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;linux&#34; category</title>
+        <link>http://book.asmyun.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 04 Jan 2021 13:36:06 +0800</pubDate>
+        <lastBuildDate>Mon, 04 Jan 2021 13:36:06 +0800</lastBuildDate>
+        <category>java</category>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/</guid>
+            <title>Linux-APT使用</title>
+            <link>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/</link>
+            <pubDate>Mon, 04 Jan 2021 13:36:06 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/</guid>
+            <title>Linux-YUM使用</title>
+            <link>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/</link>
+            <pubDate>Mon, 04 Jan 2021 13:35:02 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+    </channel>
+</rss>

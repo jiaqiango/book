@@ -5,8 +5,23 @@
         <link>http://book.asmyun.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 16 Dec 2020 10:57:08 +0800</pubDate>
-        <lastBuildDate>Wed, 16 Dec 2020 10:57:08 +0800</lastBuildDate>
+        <pubDate>Mon, 04 Jan 2021 13:36:06 +0800</pubDate>
+        <lastBuildDate>Mon, 04 Jan 2021 13:36:06 +0800</lastBuildDate>
+        <category>java</category>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/</guid>
+            <title>Linux-APT使用</title>
+            <link>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/</link>
+            <pubDate>Mon, 04 Jan 2021 13:36:06 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/</guid>
+            <title>Linux-YUM使用</title>
+            <link>http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/</link>
+            <pubDate>Mon, 04 Jan 2021 13:35:02 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://book.asmyun.com/2020/12/16/computer-science/kettle/kettle-demo/</guid>
             <title>kettle_demo</title>
@@ -503,6 +518,29 @@ Kettle 自己有三个主要组件：Spoon，Kitchen，Pan&lt;/p&gt;
 &lt;p&gt;嵌入式 Web 服务，用于远程执行 Job 或 Transformation，Kettle 通过 Carte 建立集群。&lt;/p&gt;
 &lt;h4 id=&#34;encr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#encr&#34;&gt;#&lt;/a&gt; Encr&lt;/h4&gt;
 &lt;p&gt;Kettle 用于字符串加密的命令行工具，如：对在 Job 或 Transformation 中定义的数据库连接参数进行加密。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/</guid>
+            <title>Java数据类型</title>
+            <link>http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/</link>
+            <pubDate>Wed, 04 Jan 2012 11:20:33 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://book.asmyun.com/2012/01/04/computer-science/java/java-install/</guid>
+            <title>Java安装&amp;&amp;配置</title>
+            <link>http://book.asmyun.com/2012/01/04/computer-science/java/java-install/</link>
+            <category>java</category>
+            <pubDate>Wed, 04 Jan 2012 11:16:54 +0800</pubDate>
+            <description><![CDATA[ &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#CSV%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;CSV 文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Excel%E8%BE%93%E5%85%A5&#34;&gt;Excel 输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;文本文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E8%AE%B0%E5%BD%95&#34;&gt;生成记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0&#34;&gt;生成随机数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%A8%E8%BE%93%E5%85%A5&#34;&gt;表输入&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>

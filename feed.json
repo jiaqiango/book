@@ -5,6 +5,22 @@
     "home_page_url": "http://book.asmyun.com",
     "items": [
         {
+            "id": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/",
+            "url": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-apt/",
+            "title": "Linux-APT使用",
+            "date_published": "2021-01-04T05:36:06.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/",
+            "url": "http://book.asmyun.com/2021/01/04/computer-science/linux/linux-yum/",
+            "title": "Linux-YUM使用",
+            "date_published": "2021-01-04T05:35:02.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
             "id": "http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/",
             "url": "http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/",
             "title": "hadoop_install",
@@ -123,6 +139,24 @@
             "date_published": "2020-12-14T06:13:49.000Z",
             "content_html": "<ul>\n<li>\n<a href=\"#\">Post not found: kettle-install 安装kettle</a>\n</li>\n<li>\n<a href=\"#\">Post not found: kettle-one 编写第一个作业</a>\n</li>\n<li>\n<a href=\"#\">Post not found: kettle-control 组件介绍</a>\n</li>\n<li>\n<a href=\"#\">Post not found: kettle-demo kettle示例</a>\n</li>\n</ul>\n<h3 id=\"etl介绍\"><a class=\"markdownIt-Anchor\" href=\"#etl介绍\">#</a> ETL 介绍</h3>\n<h4 id=\"etl是什么\"><a class=\"markdownIt-Anchor\" href=\"#etl是什么\">#</a> ETL 是什么</h4>\n<p>ETL 分别是 “Extract”、“ Transform” 、“Load” 三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取</p>\n<h4 id=\"etl工具\"><a class=\"markdownIt-Anchor\" href=\"#etl工具\">#</a> ETL 工具</h4>\n<p>ETL 的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作<br>\n目前，ETL 工具的典型代表有:<br>\n 商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS<br>\n 开源软件：Kettle、Talend、CloverETL、Ketl，Octopus</p>\n<h3 id=\"kettle介绍\"><a class=\"markdownIt-Anchor\" href=\"#kettle介绍\">#</a> Kettle 介绍</h3>\n<p>Kettle 是 Pentaho 的一个组件，主要用于数据库间的数据迁移。<br>\nKettle 自己有三个主要组件：Spoon，Kitchen，Pan</p>\n<h4 id=\"spoon\"><a class=\"markdownIt-Anchor\" href=\"#spoon\">#</a> Spoon</h4>\n<p>图形化界面工具 (GUI 方式)，Spoon 允许你通过图形界面来设计 Job 和 Transformation，可以保存为文件或者保存在数据库中。<br>\n也可以直接在 Spoon 图形化界面中运行 Job 和 Transformation，</p>\n<h4 id=\"pan\"><a class=\"markdownIt-Anchor\" href=\"#pan\">#</a> Pan</h4>\n<p>Transformation 执行器 (命令行方式)，Pan 用于在终端执行 Transformation，没有图形界面。</p>\n<h4 id=\"kitchen\"><a class=\"markdownIt-Anchor\" href=\"#kitchen\">#</a> Kitchen</h4>\n<p>Job 执行器 (命令行方式)，Kitchen 用于在终端执行 Job，没有图形界面。</p>\n<h4 id=\"carte\"><a class=\"markdownIt-Anchor\" href=\"#carte\">#</a> Carte</h4>\n<p>嵌入式 Web 服务，用于远程执行 Job 或 Transformation，Kettle 通过 Carte 建立集群。</p>\n<h4 id=\"encr\"><a class=\"markdownIt-Anchor\" href=\"#encr\">#</a> Encr</h4>\n<p>Kettle 用于字符串加密的命令行工具，如：对在 Job 或 Transformation 中定义的数据库连接参数进行加密。</p>\n",
             "tags": []
+        },
+        {
+            "id": "http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/",
+            "url": "http://book.asmyun.com/2012/01/04/computer-science/java/java-type-data/",
+            "title": "Java数据类型",
+            "date_published": "2012-01-04T03:20:33.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "http://book.asmyun.com/2012/01/04/computer-science/java/java-install/",
+            "url": "http://book.asmyun.com/2012/01/04/computer-science/java/java-install/",
+            "title": "Java安装&&配置",
+            "date_published": "2012-01-04T03:16:54.000Z",
+            "content_html": "<ul>\n<li><a href=\"#CSV%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5\">CSV 文件输入</a></li>\n<li><a href=\"#Excel%E8%BE%93%E5%85%A5\">Excel 输入</a></li>\n<li><a href=\"#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5\">文本文件输入</a></li>\n<li><a href=\"#%E7%94%9F%E6%88%90%E8%AE%B0%E5%BD%95\">生成记录</a></li>\n<li><a href=\"#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0\">生成随机数</a></li>\n<li><a href=\"#%E8%A1%A8%E8%BE%93%E5%85%A5\">表输入</a></li>\n</ul>\n",
+            "tags": [
+                "java"
+            ]
         }
     ]
 }

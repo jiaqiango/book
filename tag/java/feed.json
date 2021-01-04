@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hexo • All posts by \"java\" tag",
+    "description": "",
+    "home_page_url": "http://book.asmyun.com",
+    "items": [
+        {
+            "id": "http://book.asmyun.com/2012/01/04/computer-science/java/java-install/",
+            "url": "http://book.asmyun.com/2012/01/04/computer-science/java/java-install/",
+            "title": "Java安装&&配置",
+            "date_published": "2012-01-04T03:16:54.000Z",
+            "content_html": "<ul>\n<li><a href=\"#CSV%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5\">CSV 文件输入</a></li>\n<li><a href=\"#Excel%E8%BE%93%E5%85%A5\">Excel 输入</a></li>\n<li><a href=\"#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5\">文本文件输入</a></li>\n<li><a href=\"#%E7%94%9F%E6%88%90%E8%AE%B0%E5%BD%95\">生成记录</a></li>\n<li><a href=\"#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0\">生成随机数</a></li>\n<li><a href=\"#%E8%A1%A8%E8%BE%93%E5%85%A5\">表输入</a></li>\n</ul>\n",
+            "tags": [
+                "java"
+            ]
+        }
+    ]
+}
