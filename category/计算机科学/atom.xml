@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://book.asmyun.com</id>
+    <title>Hexo • Posts by &#34;计算机科学&#34; category</title>
+    <link href="http://book.asmyun.com" />
+    <updated>2020-12-16T02:57:08.000Z</updated>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/16/computer-science/kettle/kettle-demo/</id>
+        <title>kettle_demo</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/16/computer-science/kettle/kettle-demo/"/>
+        <content type="html"></content>
+        <updated>2020-12-16T02:57:08.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-mapping/</id>
+        <title>kettle映射控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-mapping/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Simple+mapping&#34;&gt;Simple mapping (sub-transformation)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%98%A0%E5%B0%84%EF%BC%88%E5%AD%90%E8%BD%AC%E6%8D%A2%EF%BC%89&#34;&gt;映射（子转换）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%98%A0%E5%B0%84%E8%BE%93%E5%85%A5%E8%A7%84%E8%8C%83&#34;&gt;映射输入规范&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%98%A0%E5%B0%84%E8%BE%93%E5%87%BA%E8%A7%84%E8%8C%83&#34;&gt;映射输出规范&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;simple-mapping&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#simple-mapping&#34;&gt;#&lt;/a&gt; Simple mapping&lt;/h5&gt;
+&lt;p&gt;是用来配置子转换，对子转换进行调用的一个步骤。子转换可以让相同的业务功能进行重用，抽取出来，方便进行调用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意：这个子转换只有一个输入输出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/1608361013.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;映射子转换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#映射子转换&#34;&gt;#&lt;/a&gt; 映射（子转换）&lt;/h5&gt;
+&lt;p&gt;是用来配置子转换，对子转换进行调用的一个步骤。子转换可以让相同的业务功能进行重用，抽取出来，方便进行调用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意：这个子转换可以多个输入输出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/eid8iwp6eg.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;配置输入&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/1608360840.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;配置输出&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/1608360894.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;映射输入规范&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#映射输入规范&#34;&gt;#&lt;/a&gt; 映射输入规范&lt;/h5&gt;
+&lt;p&gt;是输入字段，由调用的转换输入&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/9gmbva6wtc.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;映射输出规范&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#映射输出规范&#34;&gt;#&lt;/a&gt; 映射输出规范&lt;/h5&gt;
+&lt;p&gt;向调用的转换输出所有列，不做任何处理&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-mapping/eor71soyi8.png&#34; class=&#34;&#34;&gt;</content>
+        <updated>2020-12-15T06:37:40.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-joins/</id>
+        <title>kettle连接控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-joins/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%90%88%E5%B9%B6%E8%AE%B0%E5%BD%95&#34;&gt;合并记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%AE%B0%E5%BD%95%E9%9B%86%E8%BF%9E%E6%8E%A5&#34;&gt;记录集连接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%AE%B0%E5%BD%95%E5%85%B3%E8%81%94&#34;&gt;记录关联&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;合并记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#合并记录&#34;&gt;#&lt;/a&gt; 合并记录&lt;/h5&gt;
+&lt;p&gt;将两个不同来源的数据合并，这两个来源的数据分别为旧数据和新数据，该步骤将旧数据和新数据按照指定的关键字匹配、比较、合并&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;需要设置的参数：
+&lt;ul&gt;
+&lt;li&gt;旧数据来源：旧数据来源的步骤。&lt;/li&gt;
+&lt;li&gt;新数据来源：新数据来源的步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;标志字段：设置标志字段的名称，标志字段用于保存比较的结果，比较结果有下列几种。
+&lt;ul&gt;
+&lt;li&gt;“identical”，旧数据和新数据一样。&lt;/li&gt;
+&lt;li&gt;“changed” ，数据发生了变化。&lt;/li&gt;
+&lt;li&gt;“new”， 新数据中有而旧数据中没有的记录。&lt;/li&gt;
+&lt;li&gt;“deleted”，旧数据中有而新数据中没有的记录。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;关键字段：用于定位两个数据源中的同一条记录。
+&lt;ul&gt;
+&lt;li&gt;比较字段：对于两个数据源中的同一条记录中，指定需要比较的字段。&lt;/li&gt;
+&lt;li&gt;合并后的数据将包括旧数据来源和新数据来源里的所有数据，对于变化的数据，使用新数据代替旧数据，同时在结果里用一个标示字段，来指定新旧数据的比较结果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意：
+&lt;ul&gt;
+&lt;li&gt;旧数据和新数据需要事先按照关键字段排序。&lt;/li&gt;
+&lt;li&gt;旧数据和新数据要有相同的字段名称。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-joins/ikppamhpim.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;记录集连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录集连接&#34;&gt;#&lt;/a&gt; 记录集连接&lt;/h5&gt;
+&lt;p&gt;数据库的左连接、右连接、内连接、外连接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意：在进行记录集连接之前，应该要对记录集进行排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-joins/rnsq3ft2g8.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;记录关联&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录关联&#34;&gt;#&lt;/a&gt; 记录关联&lt;/h5&gt;
+&lt;p&gt;对两个数据流进行笛卡尔积&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-joins/y9xbnutwp2.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:37:18.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-lookup/</id>
+        <title>kettle查询控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-lookup/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Column+exists&#34;&gt;Column exists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2&#34;&gt;数据库查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5&#34;&gt;数据库连接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%A3%80%E6%9F%A5%E8%A1%A8%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8&#34;&gt;检查表是否存在&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%B5%81%E6%9F%A5%E8%AF%A2&#34;&gt;流查询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%B0%83%E7%94%A8DB%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B&#34;&gt;调用 DB 存储过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;column-exists&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#column-exists&#34;&gt;#&lt;/a&gt; Column exists&lt;/h5&gt;
+&lt;p&gt;检查表指定的字段是否存在 (结果字段名是 Boolean 类型)&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/1608347285.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;数据库查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库查询&#34;&gt;#&lt;/a&gt; 数据库查询&lt;/h5&gt;
+&lt;p&gt;数据库里面的左连接。左连接就是两张表执行左关联查询，把左边的表数据全部查询出来&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/tvsh4rqhbe.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;数据库连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库连接&#34;&gt;#&lt;/a&gt; 数据库连接&lt;/h5&gt;
+&lt;p&gt;可以执行两个数据库的查询，和单参数的表输入&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/bwow6hdwwx.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;检查表是否存在&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检查表是否存在&#34;&gt;#&lt;/a&gt; 检查表是否存在&lt;/h5&gt;
+&lt;p&gt;和&lt;a href=&#34;#Column+exists&#34;&gt; Column exists&lt;/a&gt; 一样，只不过这个检查表是否存在&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/1608347618.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;流查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#流查询&#34;&gt;#&lt;/a&gt; 流查询&lt;/h5&gt;
+&lt;p&gt;查询前把数据都加载到内存中，并且只能进行等值查询&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/1kuxfvetmu.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;调用db存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#调用db存储过程&#34;&gt;#&lt;/a&gt; 调用 DB 存储过程&lt;/h5&gt;
+&lt;p&gt;执行数据库的存储过程&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-lookup/1608347827.png&#34; class=&#34;&#34;&gt;</content>
+        <updated>2020-12-15T06:37:03.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-scripting/</id>
+        <title>kettle脚本控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-scripting/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Java%E4%BB%A3%E7%A0%81&#34;&gt;Java 代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#JavaScript%E4%BB%A3%E7%A0%81&#34;&gt;JavaScript 代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%89%A7%E8%A1%8CSQL%E8%84%9A%E6%9C%AC&#34;&gt;执行 SQL 脚本&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;java代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java代码&#34;&gt;#&lt;/a&gt; Java 代码&lt;/h5&gt;
+&lt;p&gt;使用 java 语言通过代码编程来完成对数据流的操作。内置了很多函数可以直接使用。也可以使用 jar 里面的类库（把编译好的 jar 放到 lib 目录里面）&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-scripting/xr6ia0z5ch.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;javascript代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript代码&#34;&gt;#&lt;/a&gt; JavaScript 代码&lt;/h5&gt;
+&lt;p&gt;使用 javascript 语言通过代码编程来完成对数据流的操作。JS 中有很多内置函数，可以在编写 JS 代码时查看&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-scripting/l9yc64dm31.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;执行sql脚本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#执行sql脚本&#34;&gt;#&lt;/a&gt; 执行 SQL 脚本&lt;/h5&gt;
+&lt;p&gt;可以执行 sql 语句&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-scripting/tgbhciscjy.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:36:39.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-flow/</id>
+        <title>kettle流程控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-flow/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Switch/case&#34;&gt;Switch/case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%BF%87%E6%BB%A4%E8%AE%B0%E5%BD%95&#34;&gt;过滤记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%A9%BA%E6%93%8D%E4%BD%9C&#34;&gt;空操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E4%B8%AD%E6%AD%A2&#34;&gt;中止&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%A3%80%E6%B5%8B%E7%A9%BA%E6%B5%81&#34;&gt;检测空流&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Blocking+step%EF%BC%88%E9%98%BB%E5%A1%9E%E6%95%B0%E6%8D%AE%EF%BC%89&#34;&gt;Blocking step（阻塞数据）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;switchcase&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#switchcase&#34;&gt;#&lt;/a&gt; Switch/case&lt;/h5&gt;
+&lt;p&gt;数据流从一路到多路，等同 java 中 switch&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/jxe3r6lbml.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;过滤记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#过滤记录&#34;&gt;#&lt;/a&gt; 过滤记录&lt;/h5&gt;
+&lt;p&gt;从一路到两路，等同 java 中 if&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/2k4z2t7s5i.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;空操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#空操作&#34;&gt;#&lt;/a&gt; 空操作&lt;/h5&gt;
+&lt;p&gt;数据流的终点&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/qeacjl4b55.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;中止&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#中止&#34;&gt;#&lt;/a&gt; 中止&lt;/h5&gt;
+&lt;p&gt;数据流的终点，如果有数据到这里，将会报错。用来校验数据的时候使用&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/eslpl1d7w3.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;检测空流&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检测空流&#34;&gt;#&lt;/a&gt; 检测空流&lt;/h5&gt;
+&lt;p&gt;如果数据流为空（即数据流不包含任何行），则此步骤将输出一行。 输出行将具有与输入行相同的字段，但是所有字段值将为空（NULL）&lt;br&gt;
+如果数据流不为空，则不会输出任何内容&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/1608283112.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;blocking-step阻塞数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#blocking-step阻塞数据&#34;&gt;#&lt;/a&gt; Blocking step（阻塞数据）&lt;/h5&gt;
+&lt;p&gt;有多条数据时，只会通过最后一条数据&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-flow/1608283356.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:36:20.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-utility/</id>
+        <title>kettle应用控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-utility/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%86%99%E6%97%A5%E5%BF%97&#34;&gt;写日志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%9B%BF%E6%8D%A2NULL%E5%80%BC&#34;&gt;替换 NULL 值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%BB%B6%E8%BF%9F%E8%A1%8C&#34;&gt;延迟行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6&#34;&gt;发送邮件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%AF%94%E8%BE%83%E8%A1%A8&#34;&gt;比较表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%AE%BE%E7%BD%AE%E5%80%BC%E4%B8%BANULL&#34;&gt;设置值为 NULL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;写日志&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#写日志&#34;&gt;#&lt;/a&gt; 写日志&lt;/h5&gt;
+&lt;p&gt;调试的时候使用，把日志信息打印到日志窗口&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/tg6pt6zv8g.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;替换null值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#替换null值&#34;&gt;#&lt;/a&gt; 替换 NULL 值&lt;/h5&gt;
+&lt;p&gt;把 null 转换为其它的值。NULL 值不好进行数据分析&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/s1rcuqhu0n.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;延迟行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#延迟行&#34;&gt;#&lt;/a&gt; 延迟行&lt;/h5&gt;
+&lt;p&gt;延时处理，每次读取都要延迟输出&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/1608281593.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;发送邮件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#发送邮件&#34;&gt;#&lt;/a&gt; 发送邮件&lt;/h5&gt;
+&lt;p&gt;顾名思义就是往邮箱发送邮件，一般情况下都会使用脚本拼装邮件内容&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/1608281715.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;比较表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#比较表&#34;&gt;#&lt;/a&gt; 比较表&lt;/h5&gt;
+&lt;p&gt;比较两个表中的数据（假设它们具有相同的表结构）。它将发现两个表中的数据之间的差异并将其记录下来&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/1608282045.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;设置值为null&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置值为null&#34;&gt;#&lt;/a&gt; 设置值为 NULL&lt;/h5&gt;
+&lt;p&gt;如果某个字段等于指定的值，则将该值设置为 null。备注：字段是字符串类型&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-utility/1608282314.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:36:09.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-transform/</id>
+        <title>kettle转换控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-transform/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Concat+fields&#34;&gt;Concat fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%80%BC%E6%98%A0%E5%B0%84&#34;&gt;值映射&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%89%AA%E5%88%87%E5%AD%97%E7%AC%A6%E4%B8%B2&#34;&gt;剪切字符串&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%A2%9E%E5%8A%A0%E5%B8%B8%E9%87%8F&#34;&gt;增加常量&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%A2%9E%E5%8A%A0%E5%BA%8F%E5%88%97&#34;&gt;增加序列&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AD%97%E6%AE%B5%E9%80%89%E6%8B%A9&#34;&gt;字段选择&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C&#34;&gt;字符串操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2&#34;&gt;字符串替换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%AE%B0%E5%BD%95&#34;&gt;去除重复记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%8E%92%E5%BA%8F%E8%AE%B0%E5%BD%95&#34;&gt;排序记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%94%AF%E4%B8%80%E8%A1%8C(%E5%93%88%E5%B8%8C%E5%80%BC)&#34;&gt;唯一行 (哈希值)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%8B%86%E5%88%86%E5%AD%97%E6%AE%B5&#34;&gt;拆分字段&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%88%97%E6%8B%86%E5%88%86%E4%B8%BA%E5%A4%9A%E8%A1%8C&#34;&gt;列拆分为多行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%88%97%E8%BD%AC%E8%A1%8C&#34;&gt;列转行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%8C%E8%BD%AC%E5%88%97&#34;&gt;行转列&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%8C%E6%89%81%E5%B9%B3%E5%8C%96&#34;&gt;行扁平化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%AE%A1%E7%AE%97%E5%99%A8&#34;&gt;计算器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;concat-fields&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#concat-fields&#34;&gt;#&lt;/a&gt; Concat fields&lt;/h5&gt;
+&lt;p&gt;多个字段连接起来形成一个新的字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/hyodd6nsmq.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;值映射&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#值映射&#34;&gt;#&lt;/a&gt; 值映射&lt;/h5&gt;
+&lt;p&gt;把字段的一个值映射成其他的值。在数据质量规范上使用非常多，比如很多系统对应性别 gender 字段的定义不同&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/8pefxoyzfr.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;剪切字符串&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剪切字符串&#34;&gt;#&lt;/a&gt; 剪切字符串&lt;/h5&gt;
+&lt;p&gt;指定输入流字段裁剪的位置剪切出新的字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/3osq26iwz6.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;增加常量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#增加常量&#34;&gt;#&lt;/a&gt; 增加常量&lt;/h5&gt;
+&lt;p&gt;在本身的数据流里面添加一列数据，该列的数据都是相同的值&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/feqxhm7ydg.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;增加序列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#增加序列&#34;&gt;#&lt;/a&gt; 增加序列&lt;/h5&gt;
+&lt;p&gt;给数据流添加一个序列字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/srkhzwew0q.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;字段选择&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字段选择&#34;&gt;#&lt;/a&gt; 字段选择&lt;/h5&gt;
+&lt;p&gt;从数据流中选择字段、改变名称、修改数据类型&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/fv2szftte9.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;选择要移除的字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/tg1ztyab5b.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;选择要改变的元数据信息&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/26t0f0or0a.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;字符串操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字符串操作&#34;&gt;#&lt;/a&gt; 字符串操作&lt;/h5&gt;
+&lt;p&gt;去除字符串两端的空格和大小写切换，转换字符串大小写，并生成新的字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/jf6zopwn1k.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;字符串替换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字符串替换&#34;&gt;#&lt;/a&gt; 字符串替换&lt;/h5&gt;
+&lt;p&gt;指定搜索内容和替换内容，如果输入流的字段匹配上搜索内容就进行替换生成新字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/7omradq1p3.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;去除重复记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#去除重复记录&#34;&gt;#&lt;/a&gt; 去除重复记录&lt;/h5&gt;
+&lt;p&gt;去除数据流里面相同的数据行。注意：必须先对数据流进行排序&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/q1z2ujrt2q.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;排序记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#排序记录&#34;&gt;#&lt;/a&gt; 排序记录&lt;/h5&gt;
+&lt;p&gt;按照指定的字段的升序或降序对数据流排序&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/8g9hg562ok.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;唯一行哈希值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#唯一行哈希值&#34;&gt;#&lt;/a&gt; 唯一行 (哈希值)&lt;/h5&gt;
+&lt;p&gt;删除数据流重复的行。注意：唯一行（哈希值）和（排序记录 + 去除重复记录）效果一样的，但是实现的原理不同。唯一行（哈希值）执行的效率会高一些！唯一行哈希值是根据哈希值进行比较的，而去除重复记录是比较相邻两行数据是否一致进行比较的&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/jvnioe357n.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;拆分字段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#拆分字段&#34;&gt;#&lt;/a&gt; 拆分字段&lt;/h5&gt;
+&lt;p&gt;把字段按照分隔符拆分成两个或多个字段。注意：拆分字段后，原字段就不存在于数据流中&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/9rnpdx7en4.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;列拆分为多行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列拆分为多行&#34;&gt;#&lt;/a&gt; 列拆分为多行&lt;/h5&gt;
+&lt;p&gt;把指定分隔符的字段进行拆分为多行&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/39pxctveig.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;列转行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列转行&#34;&gt;#&lt;/a&gt; 列转行&lt;/h5&gt;
+&lt;p&gt;如果数据一列有相同的值，按照指定的字段，把多行数据转换为一行数据。去除一些原来的列名，把一列数据变为字段。&lt;br&gt;
+　　注意：列转行之前数据流必须进行排序！必须使用排序记录！&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/2f2qowozg7.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;行转列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#行转列&#34;&gt;#&lt;/a&gt; 行转列&lt;/h5&gt;
+&lt;p&gt;把数据字段的字段名转换为一列，把数据行变为数据列&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/d1zym4myue.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;行扁平化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#行扁平化&#34;&gt;#&lt;/a&gt; 行扁平化&lt;/h5&gt;
+&lt;p&gt;把同一组的多行数据合并成为一行。注意：只有数据流的同类数据数据行记录一致的情况才可使用！数据流必须进行排序，否则结果会不正确&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/95bsokfiol.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;计算器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算器&#34;&gt;#&lt;/a&gt; 计算器&lt;/h5&gt;
+&lt;p&gt;使用函数集合来创建新的字段，还可以设置字段是否移除&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/vusrz87m86.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;选择计算函数&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-transform/1608259394.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-output/</id>
+        <title>kettle输出控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-output/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#Excel%E8%BE%93%E5%87%BA&#34;&gt;Excel 输出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%87%BA&#34;&gt;文本文件输出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#SQL%E6%96%87%E4%BB%B6%E8%BE%93%E5%87%BA&#34;&gt;SQL 文件输出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%88%A0%E9%99%A4&#34;&gt;删除&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%A8%E8%BE%93%E5%87%BA&#34;&gt;表输出&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%9B%B4%E6%96%B0&#34;&gt;更新&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%8F%92%E5%85%A5%E6%9B%B4%E6%96%B0&#34;&gt;插入更新&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B8%B8%E9%87%8F%E6%95%B0%E6%8D%AE&#34;&gt;自定义常量数据&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;excel输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#excel输出&#34;&gt;#&lt;/a&gt; Excel 输出&lt;/h5&gt;
+&lt;p&gt;Excel 输出、Microsoft Excel 输出的区别，Excel 输出只能 xls 后缀名称的文件，Microsoft Excel 输出可以生成 xls 后缀和 xlsx 后缀名称的文件的&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1566277128.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;Excel 输出，可以获取字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/937046004.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;文本文件输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文本文件输出&#34;&gt;#&lt;/a&gt; 文本文件输出&lt;/h5&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1130701638.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;获取字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/125764456.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;sql文件输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql文件输出&#34;&gt;#&lt;/a&gt; SQL 文件输出&lt;/h5&gt;
+&lt;p&gt;SQL 文件输出可以导出数据库表的结构和数据&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1690631106.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;删除&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除&#34;&gt;#&lt;/a&gt; 删除&lt;/h5&gt;
+&lt;p&gt;删除数据库表中指定条件的数据&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/500798145.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;表输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表输出&#34;&gt;#&lt;/a&gt; 表输出&lt;/h5&gt;
+&lt;p&gt;就是把数据写入到指定的表&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/935474598.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;更新&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更新&#34;&gt;#&lt;/a&gt; 更新&lt;/h5&gt;
+&lt;p&gt;就是把数据库已经存在的记录与数据流里面的记录进行比对，如果不同就进行更新。注意：如果记录不存在，则会出现错误！&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/688788712.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;插入更新&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#插入更新&#34;&gt;#&lt;/a&gt; 插入更新&lt;/h5&gt;
+&lt;p&gt;就是把数据库已经存在的记录与数据流里面的记录进行比对，如果不同就进行更新。如果记录不存在，则会插入数据&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1888776783.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;自定义常量数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自定义常量数据&#34;&gt;#&lt;/a&gt; 自定义常量数据&lt;/h5&gt;
+&lt;p&gt;就是生成 key-value 形式的常量数据&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1519047448.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;指定字段常量的值&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-output/1241634763.png&#34; class=&#34;&#34;&gt;
+</content>
+        <updated>2020-12-15T06:34:27.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-input/</id>
+        <title>kettle输入控件</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control-input/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#CSV%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;CSV 文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#Excel%E8%BE%93%E5%85%A5&#34;&gt;Excel 输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5&#34;&gt;文本文件输入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E8%AE%B0%E5%BD%95&#34;&gt;生成记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BA%E6%95%B0&#34;&gt;生成随机数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A1%A8%E8%BE%93%E5%85%A5&#34;&gt;表输入&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;csv文件输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#csv文件输入&#34;&gt;#&lt;/a&gt; CSV 文件输入&lt;/h5&gt;
+&lt;p&gt;CSV 文件是一种带有固定格式的文本文件。注意：获取字段的时候可以调整自己的字段类型，格式，满足自己的需求哦&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/1.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;excel输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#excel输入&#34;&gt;#&lt;/a&gt; Excel 输入&lt;/h5&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/5.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;选择自己的 Sheet 页&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/6.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;获取到 Excel 输入的字段，可以手动调整字段类型&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/7.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;文本文件输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文本文件输入&#34;&gt;#&lt;/a&gt; 文本文件输入&lt;/h5&gt;
+&lt;p&gt;提取日志信息的数据是开发常见的操作，日志信息基本都是文本类型&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/2.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;选择自己的分隔符&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/3.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;获取字段&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/4.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;生成记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生成记录&#34;&gt;#&lt;/a&gt; 生成记录&lt;/h5&gt;
+&lt;p&gt;数据仓库中绝大多数的数据都是业务系统生成的动态数据，但是其中一部分维度数据不是动态的&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/8.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;生成随机数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生成随机数&#34;&gt;#&lt;/a&gt; 生成随机数&lt;/h5&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/1608017446.png&#34; class=&#34;&#34;&gt;
+&lt;h5 id=&#34;表输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表输入&#34;&gt;#&lt;/a&gt; 表输入&lt;/h5&gt;
+&lt;img data-src=&#34;/2020/12/15/computer-science/kettle/kettle-control-input/9.png&#34; class=&#34;&#34;&gt;</content>
+        <updated>2020-12-15T06:34:18.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control/</id>
+        <title>组件介绍</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/15/computer-science/kettle/kettle-control/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-input 输入&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-output 输出&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-transform 转换&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-utility 应用&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-flow 流程&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-scripting 脚本&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-lookup 查询&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control-mapping 映射&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>2020-12-15T06:13:49.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle-install/</id>
+        <title>kettle安装</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle-install/"/>
+        <content type="html">&lt;h3 id=&#34;官网&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#官网&#34;&gt;#&lt;/a&gt; 官网&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jb21tdW5pdHkuaGl0YWNoaXZhbnRhcmEuY29tL3Mv&#34;&gt;https://community.hitachivantara.com/s/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;在官方网站下载安装包&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-install/1607947652.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;解压即可使用&lt;/p&gt;
+</content>
+        <updated>2020-12-14T06:13:49.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle-one/</id>
+        <title>编写第一个作业</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle-one/"/>
+        <content type="html">&lt;h3 id=&#34;主界面介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主界面介绍&#34;&gt;#&lt;/a&gt; 主界面介绍&lt;/h3&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1607995988.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;左边控件区，右边转换区&lt;/p&gt;
+&lt;h3 id=&#34;配置数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置数据库&#34;&gt;#&lt;/a&gt; 配置数据库&lt;/h3&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608010695.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;执行sql脚本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#执行sql脚本&#34;&gt;#&lt;/a&gt; 执行 SQL 脚本&lt;/h3&gt;
+&lt;h4 id=&#34;表输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表输入&#34;&gt;#&lt;/a&gt; 表输入&lt;/h4&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608010973.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;拖动 &lt;strong&gt;表输入&lt;/strong&gt; 到绘制区并编辑，SQL 区可以自定义 sql 语句&lt;/p&gt;
+&lt;h4 id=&#34;表输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表输出&#34;&gt;#&lt;/a&gt; 表输出&lt;/h4&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608011693.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;拖动 &lt;strong&gt;表输出&lt;/strong&gt; 到绘制区并编辑&lt;/p&gt;
+&lt;h4 id=&#34;连接控件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接控件&#34;&gt;#&lt;/a&gt; 连接控件&lt;/h4&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608011854.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;按住 &lt;strong&gt;Shift&lt;/strong&gt; 建，用鼠标拖动表输入控件到表输出&lt;/p&gt;
+&lt;h4 id=&#34;编辑字段映射&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#编辑字段映射&#34;&gt;#&lt;/a&gt; 编辑字段映射&lt;/h4&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608012142.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;首先点击 &lt;strong&gt;选中指定数据库字段&lt;/strong&gt; 复选框（否则无法编辑映射），点击 &lt;strong&gt;输入字段映射&lt;/strong&gt; 进入编辑&lt;/p&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608012285.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;进入 &lt;strong&gt;编辑映射&lt;/strong&gt; 可以看到 &lt;strong&gt;原表字段&lt;/strong&gt; 和 &lt;strong&gt;目标表字段&lt;/strong&gt;。手动选择字段添加到映射区并确认保存&lt;/p&gt;
+&lt;h4 id=&#34;运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运行&#34;&gt;#&lt;/a&gt; 运行&lt;/h4&gt;
+&lt;img data-src=&#34;/2020/12/14/computer-science/kettle/kettle-one/1608012627.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;点击 &lt;strong&gt;运行按钮&lt;/strong&gt; 或按 &lt;strong&gt;F9&lt;/strong&gt; 运行 kettle 脚本&lt;/p&gt;
+</content>
+        <updated>2020-12-14T06:13:49.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle/</id>
+        <title>kettle</title>
+        <link rel="alternate" href="http://book.asmyun.com/2020/12/14/computer-science/kettle/kettle/"/>
+        <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-install 安装kettle&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-one 编写第一个作业&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-control 组件介绍&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;#&#34;&gt;Post not found: kettle-demo kettle示例&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;etl介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#etl介绍&#34;&gt;#&lt;/a&gt; ETL 介绍&lt;/h3&gt;
+&lt;h4 id=&#34;etl是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#etl是什么&#34;&gt;#&lt;/a&gt; ETL 是什么&lt;/h4&gt;
+&lt;p&gt;ETL 分别是 “Extract”、“ Transform” 、“Load” 三个单词的首字母缩写也即数据抽取、转换、装载的过程，但我们日常往往简称其为数据抽取&lt;/p&gt;
+&lt;h4 id=&#34;etl工具&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#etl工具&#34;&gt;#&lt;/a&gt; ETL 工具&lt;/h4&gt;
+&lt;p&gt;ETL 的工具功能：必须对抽取到的数据能进行灵活计算、合并、拆分等转换操作&lt;br&gt;
+目前，ETL 工具的典型代表有:&lt;br&gt;
+ 商业软件：Informatica、IBM Datastage、Oracle ODI、Microsoft SSIS&lt;br&gt;
+ 开源软件：Kettle、Talend、CloverETL、Ketl，Octopus&lt;/p&gt;
+&lt;h3 id=&#34;kettle介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kettle介绍&#34;&gt;#&lt;/a&gt; Kettle 介绍&lt;/h3&gt;
+&lt;p&gt;Kettle 是 Pentaho 的一个组件，主要用于数据库间的数据迁移。&lt;br&gt;
+Kettle 自己有三个主要组件：Spoon，Kitchen，Pan&lt;/p&gt;
+&lt;h4 id=&#34;spoon&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#spoon&#34;&gt;#&lt;/a&gt; Spoon&lt;/h4&gt;
+&lt;p&gt;图形化界面工具 (GUI 方式)，Spoon 允许你通过图形界面来设计 Job 和 Transformation，可以保存为文件或者保存在数据库中。&lt;br&gt;
+也可以直接在 Spoon 图形化界面中运行 Job 和 Transformation，&lt;/p&gt;
+&lt;h4 id=&#34;pan&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pan&#34;&gt;#&lt;/a&gt; Pan&lt;/h4&gt;
+&lt;p&gt;Transformation 执行器 (命令行方式)，Pan 用于在终端执行 Transformation，没有图形界面。&lt;/p&gt;
+&lt;h4 id=&#34;kitchen&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#kitchen&#34;&gt;#&lt;/a&gt; Kitchen&lt;/h4&gt;
+&lt;p&gt;Job 执行器 (命令行方式)，Kitchen 用于在终端执行 Job，没有图形界面。&lt;/p&gt;
+&lt;h4 id=&#34;carte&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#carte&#34;&gt;#&lt;/a&gt; Carte&lt;/h4&gt;
+&lt;p&gt;嵌入式 Web 服务，用于远程执行 Job 或 Transformation，Kettle 通过 Carte 建立集群。&lt;/p&gt;
+&lt;h4 id=&#34;encr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#encr&#34;&gt;#&lt;/a&gt; Encr&lt;/h4&gt;
+&lt;p&gt;Kettle 用于字符串加密的命令行工具，如：对在 Job 或 Transformation 中定义的数据库连接参数进行加密。&lt;/p&gt;
+</content>
+        <updated>2020-12-14T06:13:49.000Z</updated>
+    </entry>
+</feed>

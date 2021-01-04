@@ -1,0 +1,604 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://book.asmyun.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://book.asmyun.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://book.asmyun.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/">
+
+
+
+  <title>
+hadoop_install - hadoop |
+QiangJia = Hexo</title>
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">hadoop_install
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-12-29 14:01:41">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-12-29T14:01:41+08:00">2020-12-29</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>2.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">QiangJia</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/hadoop/" itemprop="item" rel="index" title="分类于 hadoop"><span itemprop="name">hadoop</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="QiangJia">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <ul>
+<li><a href="#hadoop%E4%BB%8B%E7%BB%8D">hadoop 介绍</a></li>
+<li><a href="#%E8%AE%B0%E5%BD%95%E9%9B%86%E8%BF%9E%E6%8E%A5">记录集连接</a></li>
+<li><a href="#%E8%AE%B0%E5%BD%95%E5%85%B3%E8%81%94">记录关联</a></li>
+</ul>
+<ul>
+<li>
+<a href="#">Post not found: kettle-install 安装kettle</a>
+</li>
+<li>
+<a href="#">Post not found: kettle-one 编写第一个作业</a>
+</li>
+<li>
+<a href="#">Post not found: kettle-control 组件介绍</a>
+</li>
+<li>
+<a href="#">Post not found: kettle-demo kettle示例</a>
+</li>
+</ul>
+<h4 id="hadoop介绍"><a class="markdownIt-Anchor" href="#hadoop介绍">#</a> hadoop 介绍</h4>
+<h4 id="hadoop下载"><a class="markdownIt-Anchor" href="#hadoop下载">#</a> hadoop 下载</h4>
+<h4 id="hadoop安装"><a class="markdownIt-Anchor" href="#hadoop安装">#</a> hadoop 安装</h4>
+<h4 id="hadoop配置"><a class="markdownIt-Anchor" href="#hadoop配置">#</a> hadoop 配置</h4>
+<h4 id="hadoop异常解决"><a class="markdownIt-Anchor" href="#hadoop异常解决">#</a> hadoop 异常解决</h4>
+<h5 id="error-but-there-is-no-hdfs_namenode_user-defined-aborting-operation"><a class="markdownIt-Anchor" href="#error-but-there-is-no-hdfs_namenode_user-defined-aborting-operation">#</a> ERROR: but there is no HDFS_NAMENODE_USER defined. Aborting operation.</h5>
+<p>The root cause of this problem,</p>
+<p>hadoop install for different user and you start yarn service for different user. OR<br>
+in hadoop config’s <span class="exturl" data-url="aHR0cDovL2hhZG9vcC1lbnYuc2g=">hadoop-env.sh</span> specified HDFS_NAMENODE_USER and HDFS_DATANODE_USER user is something else.<br>
+Hence we need to correct and make it consistent at every place. So a simple solution of this problem is to edit your <span class="exturl" data-url="aHR0cDovL2hhZG9vcC1lbnYuc2g=">hadoop-env.sh</span> file and add the user-name for which you want to start the yarn service. So go ahead and edit $HADOOP_HOME/etc/hadoop/hadoop-env.sh by adding the following lines</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export HDFS_NAMENODE_USER=root</span><br><span class="line">export HDFS_DATANODE_USER=root</span><br><span class="line">export HDFS_SECONDARYNAMENODE_USER=root</span><br><span class="line">export YARN_RESOURCEMANAGER_USER=root</span><br><span class="line">export YARN_NODEMANAGER_USER=root</span><br></pre></td></tr></table></figure>
+<h5 id="error-java_home-is-not-set-and-could-not-be-found"><a class="markdownIt-Anchor" href="#error-java_home-is-not-set-and-could-not-be-found">#</a> ERROR: JAVA_HOME is not set and could not be found.</h5>
+<p>没有配置好 java 环境变量<br>
+第一种临时修改环境变量<br>
+ <code>export JAVA_HOME=/usr/java/jdk1.6.0_45</code> <br>
+ 第二种修改 hadoop JAVA_HOME<br>
+ <code>cd $HADOOP_HOME/etc/hadoop</code> <br>
+ <code>vim hadoop-env.sh</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Many of the options here are built from the perspective that users</span></span><br><span class="line"><span class="comment"># may want to provide OVERWRITING values on the command line.</span></span><br><span class="line"><span class="comment"># For example:</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#  JAVA_HOME=/usr/java/testing hdfs dfs -ls</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Therefore, the vast majority (BUT NOT ALL!) of these defaults</span></span><br><span class="line"><span class="comment"># are configured for substitution and not append.  If append</span></span><br><span class="line"><span class="comment"># is preferable, modify this file accordingly.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">###</span></span><br><span class="line"><span class="comment"># Generic settings for HADOOP</span></span><br><span class="line"><span class="comment">###</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Technically, the only required environment variable is JAVA_HOME.</span></span><br><span class="line"><span class="comment"># All others are optional.  However, the defaults are probably not</span></span><br><span class="line"><span class="comment"># preferred.  Many sites configure these options outside of Hadoop,</span></span><br><span class="line"><span class="comment"># such as in /etc/profile.d</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The java implementation to use. By default, this environment</span></span><br><span class="line"><span class="comment"># variable is REQUIRED on ALL platforms except OS X!</span></span><br><span class="line">export JAVA_HOME=/root/java/jdk1<span class="number">.8</span><span class="number">.0_271</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Location of Hadoop.  By default, Hadoop will attempt to determine</span></span><br><span class="line"><span class="comment"># this location based upon its execution path.</span></span><br><span class="line"><span class="comment"># export HADOOP_HOME=</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Location of Hadoop&#x27;s configuration information.  i.e., where this</span></span><br><span class="line"><span class="comment"># file is living. If this is not defined, Hadoop will attempt to</span></span><br><span class="line"><span class="comment"># locate it based upon its execution path.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># <span class="doctag">NOTE:</span> It is recommend that this variable not be set here but in</span></span><br><span class="line"><span class="comment"># /etc/profile.d or equivalent.  Some options (such as</span></span><br><span class="line"><span class="comment"># --config) may react strangely otherwise.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># export HADOOP_CONF_DIR=$&#123;HADOOP_HOME&#125;/etc/hadoop</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The maximum amount of heap to use (Java -Xmx).  If no unit</span></span><br><span class="line"><span class="comment"># is provided, it will be converted to MB.  Daemons will</span></span><br><span class="line"><span class="comment"># prefer any Xmx setting in their respective _OPT variable.</span></span><br><span class="line"><span class="comment"># There is no default; the JVM will autoscale based upon machine</span></span><br><span class="line"><span class="comment"># memory size.</span></span><br><span class="line"><span class="comment"># export HADOOP_HEAPSIZE_MAX=</span></span><br></pre></td></tr></table></figure>
+<h5 id="permission-denied-publickeygssapi-keyexgssapi-with-micpassword"><a class="markdownIt-Anchor" href="#permission-denied-publickeygssapi-keyexgssapi-with-micpassword">#</a> Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).</h5>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-12-29 14:37:49" itemprop="dateModified" datetime="2020-12-29T14:37:49+08:00">2020-12-29</time>
+  </span>
+  <span id="2020/12/29/computer-science/hadoop/hadoop-install/" class="item leancloud_visitors" data-flag-title="hadoop_install" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="QiangJia 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="QiangJia 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="QiangJia 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>QiangJia <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/" title="hadoop_install">http://book.asmyun.com/2020/12/29/computer-science/hadoop/hadoop-install/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2020/12/16/computer-science/kettle/kettle-demo/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="kettle_demo">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> kettle</span>
+  <h3>kettle_demo</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#hadoop%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text"> hadoop 介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hadoop%E4%B8%8B%E8%BD%BD"><span class="toc-number">2.</span> <span class="toc-text"> hadoop 下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hadoop%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text"> hadoop 安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hadoop%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text"> hadoop 配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hadoop%E5%BC%82%E5%B8%B8%E8%A7%A3%E5%86%B3"><span class="toc-number">5.</span> <span class="toc-text"> hadoop 异常解决</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#error-but-there-is-no-hdfs_namenode_user-defined-aborting-operation"><span class="toc-number">5.1.</span> <span class="toc-text"> ERROR: but there is no HDFS_NAMENODE_USER defined. Aborting operation.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#error-java_home-is-not-set-and-could-not-be-found"><span class="toc-number">5.2.</span> <span class="toc-text"> ERROR: JAVA_HOME is not set and could not be found.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#permission-denied-publickeygssapi-keyexgssapi-with-micpassword"><span class="toc-number">5.3.</span> <span class="toc-text"> Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2020/12/29/computer-science/hadoop/hadoop-install/" rel="bookmark" title="hadoop_install">hadoop_install</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="QiangJia"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">QiangJia</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">15</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">3</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWU=" title="https:&#x2F;&#x2F;github.com&#x2F;amehime"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9ydXJpc216aw==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;rurismzk"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTEyODg2ODIz" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;12886823"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vYW1laGltZQ==" title="https:&#x2F;&#x2F;weibo.com&#x2F;amehime"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS9hbWVoaW1l" title="https:&#x2F;&#x2F;about.me&#x2F;amehime"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-utility/" title="kettle应用控件">kettle应用控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control/" title="组件介绍">组件介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-scripting/" title="kettle脚本控件">kettle脚本控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-flow/" title="kettle流程控件">kettle流程控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-joins/" title="kettle连接控件">kettle连接控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-output/" title="kettle输出控件">kettle输出控件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/16/computer-science/kettle/kettle-demo/" title="kettle_demo">kettle_demo</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/14/computer-science/kettle/kettle/" title="kettle">kettle</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/14/computer-science/kettle/kettle-one/" title="编写第一个作业">编写第一个作业</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/kettle/" title="分类于 kettle">kettle</a>
+</div>
+
+    <span><a href="/2020/12/15/computer-science/kettle/kettle-control-input/" title="kettle输入控件">kettle输入控件</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">QiangJia @ QiangJia</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">7k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2020/12/29/computer-science/hadoop/hadoop-install/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
